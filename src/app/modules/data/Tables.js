@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
-import ContactForm from "./ContactForm"
-import firebaseDb from "../../../firebase";
+import TableForm from "./TableForm"
+import firebaseDb from "../../firebase";
+import { KTSVG, toAbsoluteUrl } from '../../../_metronic/helpers'
 
-const Contacts = () => {
+
+const TablesFB = () => {
 
     var [contactObjects, setContactObjects] = useState({})
     var [currentId, setCurrentId] = useState('')
 
     useEffect(() => {
-        firebaseDb.child('users').on('value', snapshot => {
+        firebaseDb.child('measurements').on('value', snapshot => {
             if (snapshot.val() != null)
                 setContactObjects({
                     ...snapshot.val()
@@ -21,7 +23,7 @@ const Contacts = () => {
 
     const addOrEdit = obj => {
         if (currentId == '')
-            firebaseDb.child('users').push(
+            firebaseDb.child('measurements').push(
                 obj,
                 err => {
                     if (err)
@@ -31,7 +33,7 @@ const Contacts = () => {
                 }
             )
         else
-            firebaseDb.child(`users/${currentId}`).set(
+            firebaseDb.child(`measurements/${currentId}`).set(
                 obj,
                 err => {
                     if (err)
@@ -45,7 +47,7 @@ const Contacts = () => {
     const onDelete = key => {
         if (window.confirm('Are you sure to delete this record?')) {
             debugger
-            firebaseDb.child(`users/${key}`).remove(
+            firebaseDb.child(`measurements/${key}`).remove(
                 err => {
                     if (err)
                         console.log(err)
@@ -58,34 +60,42 @@ const Contacts = () => {
 
     return (
         <>
-            
             <div className="row">
-                <div className="col-md-5">
-                    <ContactForm {...({ addOrEdit, currentId, contactObjects })} />
+                <div className="col-md-12 py-5">
+                    <TableForm {...({ addOrEdit, currentId, contactObjects })} />
                 </div>
-                <div className="col-md-7">
-                    <table className="table table-borderless table-stripped">
-                        <thead className="thead-light">
+            </div>
+
+            <div className="row">
+                <div className="col-md-12">
+                    <table className="table table-bordered">
+                        <thead className="table-dark fw-bold">
                             <tr>
-                                <th>Nombre</th>
-                                <th>Teléfono</th>
-                                <th>Email</th>
-                                <th></th>
+                                <th className='px-5'>Fecha</th>
+                                <th className='px-5'>Temperatura °C</th>
+                                <th className='px-5'>Humedad %</th>
+                                <th className='px-5'>Ubicación</th>
+                                <th className='px-5'>Acción</th>
                             </tr>
                         </thead>
                         <tbody>
                             {
                                 Object.keys(contactObjects).map(id => {
                                     return <tr key={id}>
-                                        <td>{contactObjects[id].fullName}</td>
-                                        <td>{contactObjects[id].mobile}</td>
-                                        <td>{contactObjects[id].email}</td>
-                                        <td>
+                                        <td className='px-5'>{contactObjects[id].date}</td>
+                                        <td className='px-5'>{contactObjects[id].temperature}</td>
+                                        <td className='px-5'>{contactObjects[id].humidity}</td>
+                                        <td className='px-5'>{contactObjects[id].address}</td>
+                                        <td className='px-5'>
                                             <a className="btn text-primary" onClick={() => { setCurrentId(id) }}>
-                                                <i className="fas fa-pencil-alt"></i>
+                                                <a href='/dashboard' className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'>
+                                                    <KTSVG path='/media/icons/icar/edit.svg' className='svg-icon-3' />
+                                                </a>
                                             </a>
                                             <a className="btn text-danger" onClick={() => { onDelete(id) }}>
-                                                <i className="far fa-trash-alt"></i>
+                                                <a href='/dashboard' className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'>
+                                                    <KTSVG path='/media/icons/icar/delete.svg' className='svg-icon-3' />
+                                                </a>
                                             </a>
                                         </td>
                                     </tr>
@@ -100,4 +110,4 @@ const Contacts = () => {
     );
 }
 
-export default Contacts;
+export default TablesFB;

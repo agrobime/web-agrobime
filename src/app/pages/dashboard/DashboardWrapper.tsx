@@ -3,11 +3,7 @@ import React, { FC } from 'react'
 import { useIntl } from 'react-intl'
 import { PageTitle } from '../../../_metronic/layout/core'
 import { Dash } from './components/Dash'
-import {
-  MixedWidget2,
-  MixedWidget10,
-  MixedWidget11
-} from '../../../_metronic/partials/widgets'
+import {MixedWidget11} from '../../../_metronic/partials/widgets/mixed/MixedWidget11'
 
 const DashboardPage: FC = () => (
   <>
@@ -21,19 +17,14 @@ const DashboardPage: FC = () => (
           strokeColor='#cb1e46'
         />
       </div>
-
-    </div>
-
-    <div className='row gy-5 g-xl-8'>
-      <p>Hola</p>
-      <Dash
+      <div className='col-xxl-12'>
+        <MixedWidget11
           className='card-xl-stretch mb-xl-8'
-          chartColor='success'
+          chartColor='dark'
           chartHeight='200px'
-          strokeColor='#cb1e46'
         />
+      </div>
     </div>
-
     {/* end::Row */}
 
 
