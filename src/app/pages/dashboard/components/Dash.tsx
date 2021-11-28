@@ -1,9 +1,8 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {useEffect, useRef} from 'react'
 import ApexCharts, {ApexOptions} from 'apexcharts'
-import {KTSVG} from '../../../helpers'
-import {getCSSVariableValue} from '../../../assets/ts/_utils'
-import {Dropdown1} from '../../content/dropdown/Dropdown1'
+import {KTSVG} from '../../../../_metronic/helpers'
+import {getCSSVariableValue} from '../../../../_metronic/assets/ts/_utils'
+import {Dropdown1} from '../../../../_metronic/partials/content/dropdown/Dropdown1'
 
 type Props = {
   className: string
@@ -12,7 +11,7 @@ type Props = {
   chartHeight: string
 }
 
-const MixedWidget2: React.FC<Props> = ({className, chartColor, chartHeight, strokeColor}) => {
+const Dash: React.FC<Props> = ({className, chartColor, chartHeight, strokeColor}) => {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -262,4 +261,4 @@ const chartOptions = (
   }
 }
 
-export {MixedWidget2}
+export {Dash}

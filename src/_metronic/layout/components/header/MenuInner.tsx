@@ -8,14 +8,17 @@ export function MenuInner() {
   const intl = useIntl()
   return (
     <>
-      <MenuItem title='Home' to='/home' />
-      <MenuItem title={intl.formatMessage({ id: 'MENU.DASHBOARD' })} to='/dashboard' />
-      <MenuItem title='Estadísticas' to='/estadisticas' />
+      <MenuItem title='Inicio' to='/home' />
+      <MenuItem title='Dashboard' to='/dashboard' />
+      <MenuItem title='Dashboard-t' to='/dashboard-t' />
+      <MenuItem title='Monitoreo' to='/estadisticas' />
+      {/* <MenuItem title='Monitoreo-t' to='/estadisticas-t' /> */}
 
       <MenuInnerWithSub title='Aplicaciones' to='/apps' menuPlacement='bottom-start' menuTrigger='click'>
-        <MenuItem to='/apps/chat/private-chat' title='Contactar transportista' hasBullet={true} />
-        <MenuItem to='/apps/chat/group-chat' title='Contactar especialista' hasBullet={true} />
+        <MenuItem to='/' title='Contactar transportista' hasBullet={true} />
+        <MenuItem to='/' title='Contactar especialista' hasBullet={true} />
       </MenuInnerWithSub>
+      <MenuItem title='Firebase' to='/prueba' />
 
     </>
   )

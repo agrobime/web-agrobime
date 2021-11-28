@@ -68,7 +68,7 @@ export default class TablesBody extends Component {
 
   render() {
     return (
-      <div className='card-xxl-stretch mb-5 mb-xl-8'>
+      <div className='card card-xxl-stretch mb-5 mb-xl-8'>
 
         {/* begin::Header titulo span boton */}
         <div className='card-header border-0 pt-5'>
@@ -93,14 +93,14 @@ export default class TablesBody extends Component {
               {/* begin::Table head Titulos de las columnas*/}
               <thead>
                 <tr className='fw-bolder text-muted bg-light'>
-                  <th className='ps-4 min-w-325px rounded-start'>Fecha de medición</th>
+                  <th className='ps-4 min-w-150px rounded-start'>Fecha de medición</th>
                   <th className='min-w-125px'>Humedad de aire</th>
                   <th className='min-w-125px'>Humedad de suelo</th>
                   <th className='min-w-125px'>Indicador de campo</th>
-                  <th className='min-w-200px'>Índice de calor</th>
-                  <th className='min-w-150px'>PH</th>
-                  <th className='min-w-150px'>Temperatura</th>
-                  <th className='min-w-200px text-end rounded-end'></th>
+                  <th className='min-w-100px'>Índice de calor</th>
+                  <th className='min-w-50px'>PH</th>
+                  <th className='min-w-50px'>°C</th>
+                  <th className='min-w-150px text-end rounded-end'></th>
                 </tr>
               </thead>
               {/* end::Table head */}

@@ -4,7 +4,10 @@ import {FallbackView} from '../../_metronic/partials'
 import {DashboardWrapper} from '../pages/dashboard/DashboardWrapper'
 import {MenuTestPage} from '../pages/MenuTestPage'
 import {Estadistica} from '../pages/estadistica/Estadistica'
+import {Estadistica_t} from '../pages/estadisticas-t/Estadistica-t'
+import {DashboardWrapperTrans} from '../pages/dashboard_t/DashboardWrapper'
 import {Home} from '../pages/home/Home'
+import {Prueba} from '../pages/prueba/Prueba'
 
 export function PrivateRoutes() {
   const BuilderPageWrapper = lazy(() => import('../pages/layout-builder/BuilderPageWrapper'))
@@ -18,17 +21,21 @@ export function PrivateRoutes() {
     <Suspense fallback={<FallbackView />}>
       <Switch>
         <Route path='/dashboard' component={DashboardWrapper} />
+        <Route path='/dashboard-t' component={DashboardWrapperTrans} />
         <Route path='/home' component={Home} />
+        
+        <Route path='/prueba' component={Prueba} />
         <Route path='/builder' component={BuilderPageWrapper} />
         <Route path='/estadisticas' component={Estadistica} />
+        <Route path='/estadisticas-t' component={Estadistica_t} />
         <Route path='/crafted/pages/profile' component={ProfilePage} />
         <Route path='/crafted/pages/wizards' component={WizardsPage} />
         <Route path='/crafted/widgets' component={WidgetsPage} />
         <Route path='/crafted/account' component={AccountPage} />
         <Route path='/apps/chat' component={ChatPage} />
         <Route path='/menu-test' component={MenuTestPage} />
-        <Redirect from='/auth' to='/dashboard' />
-        <Redirect exact from='/' to='/dashboard' />
+        <Redirect from='/auth' to='/home' />
+        <Redirect exact from='/' to='/home' />
         <Redirect to='error/404' />
       </Switch>
     </Suspense>

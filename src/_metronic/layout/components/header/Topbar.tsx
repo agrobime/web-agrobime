@@ -29,7 +29,7 @@ const Topbar: FC = () => {
             id='kt_drawer_chat_toggle'
           >
             <KTSVG
-              path='/media/icons/duotune/communication/com012.svg'
+              path='/media/icons/icar/message.svg'
               className={toolbarButtonIconSizeClass}
             />
 
@@ -52,7 +52,7 @@ const Topbar: FC = () => {
             data-kt-menu-flip='bottom'
           >
             <KTSVG
-              path='/media/icons/duotune/general/gen022.svg'
+              path='/media/icons/icar/notification.svg'
               className={toolbarButtonIconSizeClass}
             />
           </div>
@@ -75,7 +75,7 @@ const Topbar: FC = () => {
           >
             <img
               className='h-25px w-25px rounded'
-              src={toAbsoluteUrl('/media/farmer.png')}
+              src={toAbsoluteUrl('/media/icons/icar/user1.svg')}
               alt='metronic'
             />
           </div>

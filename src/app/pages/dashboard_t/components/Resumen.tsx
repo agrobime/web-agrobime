@@ -1,9 +1,8 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {useEffect, useRef} from 'react'
 import ApexCharts, {ApexOptions} from 'apexcharts'
-import {KTSVG} from '../../../helpers'
-import {getCSSVariableValue} from '../../../assets/ts/_utils'
-import {Dropdown1} from '../../content/dropdown/Dropdown1'
+import {KTSVG} from '../../../../_metronic/helpers/index'
+import {getCSSVariableValue} from '../../../../_metronic/assets/ts/_utils'
+import {Dropdown1} from '../../../../_metronic/partials/content/dropdown/Dropdown1'
 
 type Props = {
   className: string
@@ -12,7 +11,7 @@ type Props = {
   chartHeight: string
 }
 
-const MixedWidget2: React.FC<Props> = ({className, chartColor, chartHeight, strokeColor}) => {
+const Resumen: React.FC<Props> = ({className, chartColor, chartHeight, strokeColor}) => {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -38,9 +37,10 @@ const MixedWidget2: React.FC<Props> = ({className, chartColor, chartHeight, stro
 
   return (
     <div className={`card ${className}`}>
+     
       {/* begin::Header */}
       <div className={`card-header border-0 py-5 bg-${chartColor}`}>
-        <h3 className='card-title fw-bolder text-white'>AGROBIME - AGRICULTOR</h3>
+        <h3 className='card-title fw-bolder text-white'>AGROBIME - TRANSPORTISTA</h3>
         <div className='card-toolbar'>
           {/* begin::Menu */}
           <button
@@ -57,6 +57,7 @@ const MixedWidget2: React.FC<Props> = ({className, chartColor, chartHeight, stro
         </div>
       </div>
       {/* end::Header */}
+
       {/* begin::Body */}
       <div className='card-body p-0'>
         {/* begin::Chart */}
@@ -65,18 +66,20 @@ const MixedWidget2: React.FC<Props> = ({className, chartColor, chartHeight, stro
           className={`mixed-widget-2-chart card-rounded-bottom bg-${chartColor}`}
         ></div>
         {/* end::Chart */}
+
+
         {/* begin::Stats */}
         <div className='card-p mt-n20 position-relative'>
           {/* begin::Row */}
           <div className='row g-0'>
             {/* begin::Col */}
-            <div className='col bg-light-warning px-6 py-8 rounded-2 me-7 mb-7'>
+            <div className='col bg-light-success px-6 py-8 rounded-2 me-7 mb-7'>
               <KTSVG
                 path='/media/icons/duotune/general/gen032.svg'
                 className='svg-icon-3x svg-icon-warning d-block my-2'
               />
               <a href='#' className='text-warning fw-bold fs-6'>
-                Ventas Semanales
+                Trabajos Semanales
               </a>
             </div>
             {/* end::Col */}
@@ -98,11 +101,11 @@ const MixedWidget2: React.FC<Props> = ({className, chartColor, chartHeight, stro
             {/* begin::Col */}
             <div className='col bg-light-danger px-6 py-8 rounded-2 me-7'>
               <KTSVG
-                path='/media/icons/icar/transport.svg'
+                path='/media/icons/icar/farmer.svg'
                 className='svg-icon-3x svg-icon-danger d-block my-2'
               />
               <a href='#' className='text-danger fw-bold fs-6 mt-2'>
-                Buscar transportista
+                Buscar Agrocultor
               </a>
             </div>
             {/* end::Col */}
@@ -123,6 +126,7 @@ const MixedWidget2: React.FC<Props> = ({className, chartColor, chartHeight, stro
         {/* end::Stats */}
       </div>
       {/* end::Body */}
+
     </div>
   )
 }
@@ -262,4 +266,4 @@ const chartOptions = (
   }
 }
 
-export {MixedWidget2}
+export {Resumen}

@@ -2,46 +2,35 @@
 import React, { FC } from 'react'
 import { useIntl } from 'react-intl'
 import { PageTitle } from '../../../_metronic/layout/core'
-import { Dash } from './components/Dash'
-import {
-  MixedWidget2,
-  MixedWidget10,
-  MixedWidget11
-} from '../../../_metronic/partials/widgets'
+import { Resumen } from './components/Resumen'
+import { MixedWidget11 } from '../../../_metronic/partials/widgets/mixed/MixedWidget11'
 
 const DashboardPage: FC = () => (
   <>
     {/* begin::Row */}
     <div className='row gy-5 g-xl-8 py-5'>
       <div className='col-xxl-12'>
-        <Dash
+        <Resumen
           className='card-xl-stretch mb-xl-8'
-          chartColor='success'
+          chartColor='dark'
           chartHeight='200px'
           strokeColor='#cb1e46'
         />
       </div>
-
-    </div>
-
-    <div className='row gy-5 g-xl-8'>
-      <p>Hola</p>
-      <Dash
+      <div className='col-xxl-12'>
+        <MixedWidget11
           className='card-xl-stretch mb-xl-8'
-          chartColor='success'
+          chartColor='dark'
           chartHeight='200px'
-          strokeColor='#cb1e46'
         />
+      </div>
     </div>
-
     {/* end::Row */}
-
-
 
   </>
 )
 
-const DashboardWrapper: FC = () => {
+const DashboardWrapperTrans: FC = () => {
   const intl = useIntl()
   return (
     <>
@@ -51,4 +40,4 @@ const DashboardWrapper: FC = () => {
   )
 }
 
-export { DashboardWrapper }
+export { DashboardWrapperTrans }

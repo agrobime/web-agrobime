@@ -75,7 +75,7 @@ const Search: FC = () => {
           id='kt_header_search_toggle'
         >
           <div className='btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px'>
-            <KTSVG path='/media/icons/duotune/general/gen021.svg' className='svg-icon-1' />
+            <KTSVG path='/media/icons/icar/search.svg' className='svg-icon-1' />
           </div>
         </div>
 
@@ -90,7 +90,7 @@ const Search: FC = () => {
               autoComplete='off'
             >
               <KTSVG
-                path='/media/icons/duotune/general/gen021.svg'
+                path='/media/icons/icar/search.svg'
                 className='svg-icon-2 svg-icon-lg-1 svg-icon-gray-500 position-absolute top-50 translate-middle-y ms-0'
               />
 

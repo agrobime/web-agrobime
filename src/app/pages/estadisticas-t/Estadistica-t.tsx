@@ -2,20 +2,21 @@
 import React, { FC } from 'react'
 import { useIntl } from 'react-intl'
 import { PageTitle } from '../../../_metronic/layout/core'
-import { TablesBody } from './componentes/Tables'
+import { TablesBody } from './tables/Tables'
 
-const Estadistica: FC = () => (
+const Estadistica_t: FC = () => (
     <>
 
         {/* begin::Row */}
-        <div className='row gy-5 g-xl-8 py-5'>
-            <div className='col-xxl-12'>
+        <div className='row gy-5 g-xl-8'>
+            <div className='col-xxl-4'>
                 <TablesBody />
             </div>
+
         </div>
         {/* end::Row */}
 
     </>
 )
 
-export { Estadistica }
+export { Estadistica_t }
