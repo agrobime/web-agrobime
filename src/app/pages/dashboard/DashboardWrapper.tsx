@@ -17,6 +17,7 @@ const DashboardPage: FC = () => (
           strokeColor='#cb1e46'
         />
       </div>
+      
       <div className='col-xxl-12'>
         <MixedWidget11
           className='card-xl-stretch mb-xl-8'

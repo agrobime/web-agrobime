@@ -31,6 +31,11 @@ const TableForm = (props) => {
     }
     const handleFormSubmit = e => {
         e.preventDefault();
+        // setValues({
+        //     date: '2022', 
+        //     temperature: '25', 
+        //     humidity: '75', 
+        //     address: 'espinaca'})
         props.addOrEdit(values)
     }
 

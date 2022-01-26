@@ -42,7 +42,7 @@ const MixedWidget11: React.FC<Props> = ({className, chartColor, chartHeight}) =>
             <span className='text-gray-400 fw-bold'>Oct 8 - Oct 26 2021</span>
           </div>
 
-          <div className={`fw-bolder fs-3 text-${chartColor}`}>s/. 15,300</div>
+          <div className={`fw-bolder fs-3 text-${chartColor}`}>s/. 150,300</div>
         </div>
         {/* end::Hidden */}
 

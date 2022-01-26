@@ -8,17 +8,17 @@ export function MenuInner() {
   const intl = useIntl()
   return (
     <>
-      <MenuItem title='Inicio' to='/home' />
+      <MenuItem title='AgroBime' to='/home' />
       <MenuItem title='Dashboard' to='/dashboard' />
-      <MenuItem title='Dashboard-t' to='/dashboard-t' />
+      {/* <MenuItem title='Dashboard-t' to='/dashboard-t' /> */}
       <MenuItem title='Monitoreo' to='/estadisticas' />
       {/* <MenuItem title='Monitoreo-t' to='/estadisticas-t' /> */}
 
       <MenuInnerWithSub title='Aplicaciones' to='/apps' menuPlacement='bottom-start' menuTrigger='click'>
-        <MenuItem to='/' title='Contactar transportista' hasBullet={true} />
-        <MenuItem to='/' title='Contactar especialista' hasBullet={true} />
+        <MenuItem to='/' title='Solicitar revisión' hasBullet={true} />
+        <MenuItem to='/' title='Solicitar asistencia' hasBullet={true} />
       </MenuInnerWithSub>
-      <MenuItem title='Firebase' to='/prueba' />
+      {/* <MenuItem title='Firebase' to='/prueba' /> */}
 
     </>
   )

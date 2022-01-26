@@ -1,8 +1,8 @@
-import React, {useEffect, useRef} from 'react'
-import ApexCharts, {ApexOptions} from 'apexcharts'
-import {KTSVG} from '../../../../_metronic/helpers'
-import {getCSSVariableValue} from '../../../../_metronic/assets/ts/_utils'
-import {Dropdown1} from '../../../../_metronic/partials/content/dropdown/Dropdown1'
+import React, { useEffect, useRef } from 'react'
+import ApexCharts, { ApexOptions } from 'apexcharts'
+import { KTSVG } from '../../../../_metronic/helpers'
+import { getCSSVariableValue } from '../../../../_metronic/assets/ts/_utils'
+import { Dropdown1 } from '../../../../_metronic/partials/content/dropdown/Dropdown1'
 
 type Props = {
   className: string
@@ -11,7 +11,7 @@ type Props = {
   chartHeight: string
 }
 
-const Dash: React.FC<Props> = ({className, chartColor, chartHeight, strokeColor}) => {
+const Dash: React.FC<Props> = ({ className, chartColor, chartHeight, strokeColor }) => {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -71,7 +71,7 @@ const Dash: React.FC<Props> = ({className, chartColor, chartHeight, strokeColor}
             {/* begin::Col */}
             <div className='col bg-light-warning px-6 py-8 rounded-2 me-7 mb-7'>
               <KTSVG
-                path='/media/icons/duotune/general/gen032.svg'
+                path='/media/icons/icar/sales.svg'
                 className='svg-icon-3x svg-icon-warning d-block my-2'
               />
               <a href='#' className='text-warning fw-bold fs-6'>
@@ -82,11 +82,11 @@ const Dash: React.FC<Props> = ({className, chartColor, chartHeight, strokeColor}
             {/* begin::Col */}
             <div className='col bg-light-primary px-6 py-8 rounded-2 mb-7'>
               <KTSVG
-                path='/media/icons/duotune/arrows/arr075.svg'
+                path='/media/icons/icar/descargar.svg'
                 className='svg-icon-3x svg-icon-primary d-block my-2'
               />
               <a href='#' className='text-primary fw-bold fs-6'>
-                Agregar reporte
+                Descargar reporte
               </a>
             </div>
             {/* end::Col */}
@@ -108,11 +108,11 @@ const Dash: React.FC<Props> = ({className, chartColor, chartHeight, strokeColor}
             {/* begin::Col */}
             <div className='col bg-light-success px-6 py-8 rounded-2'>
               <KTSVG
-                path='/media/icons/duotune/communication/com010.svg'
+                path='/media/icons/icar/report-historial.svg'
                 className='svg-icon-3x svg-icon-success d-block my-2'
               />
               <a href='#' className='text-success fw-bold fs-6 mt-2'>
-                Reportes
+                Historial de Reportes
               </a>
             </div>
             {/* end::Col */}
@@ -261,4 +261,4 @@ const chartOptions = (
   }
 }
 
-export {Dash}
+export { Dash }

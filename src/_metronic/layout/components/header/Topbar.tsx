@@ -60,7 +60,7 @@ const Topbar: FC = () => {
           {/* end::Menu wrapper */}
         </div>
 
-        {/* begin::User */}
+        {/* USER */}
         <div
           className={clsx('d-flex align-items-center', toolbarButtonMarginClass)}
           id='kt_header_user_menu_toggle'
