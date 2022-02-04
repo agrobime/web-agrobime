@@ -25,7 +25,7 @@ export function AuthPage() {
       <div className='d-flex flex-center flex-column flex-column-fluid p-10 pb-lg-20'>
         {/* begin::Logo */}
         <a href='#' className='mb-12'>
-          <img alt='Logo' src={toAbsoluteUrl('/media/agrobime.png')} className='h-45px' />
+          <img alt='Logo' src={toAbsoluteUrl('/media/icons/agrobime.png')} className='h-45px' />
         </a>
         {/* end::Logo */}
         {/* begin::Wrapper */}
@@ -44,16 +44,12 @@ export function AuthPage() {
       {/* begin::Footer */}
       <div className='d-flex flex-center flex-column-auto p-10'>
         <div className='d-flex align-items-center fw-bold fs-6'>
-          <a href='#' className='text-muted text-hover-primary px-2'>
-            About
+          <a href='http://startup.uni.edu.pe/' target="_blank" rel="noreferrer" className='text-muted text-hover-primary px-2'>
+            StartUP UNI
           </a>
 
-          <a href='#' className='text-muted text-hover-primary px-2'>
-            Contact
-          </a>
-
-          <a href='#' className='text-muted text-hover-primary px-2'>
-            Contact Us
+          <a href='https://wa.me/51945341140' target="_blank" rel="noreferrer" className='text-muted text-hover-primary px-2'>
+            Contacto-AgroBime
           </a>
         </div>
       </div>

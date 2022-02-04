@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, {useState} from 'react'
+import {useState} from 'react'
 import {useDispatch} from 'react-redux'
 import * as Yup from 'yup'
 import clsx from 'clsx'
@@ -7,7 +7,6 @@ import {Link} from 'react-router-dom'
 import {useFormik} from 'formik'
 import * as auth from '../redux/AuthRedux'
 import {login} from '../redux/AuthCRUD'
-import {toAbsoluteUrl} from '../../../../_metronic/helpers'
 
 const loginSchema = Yup.object().shape({
   email: Yup.string()
@@ -25,12 +24,6 @@ const initialValues = {
   email: 'admin@agrobime.com',
   password: 'demo',
 }
-
-/*
-  Formik+YUP+Typescript:
-  https://jaredpalmer.com/formik/docs/tutorial#getfieldprops
-  https://medium.com/@maurice.de.beijer/yup-validation-and-typescript-and-formik-6c342578a20e
-*/
 
 export function Login() {
   const [loading, setLoading] = useState(false)
@@ -65,12 +58,6 @@ export function Login() {
       {/* begin::Heading */}
       <div className='text-center mb-10'>
         <h1 className='text-dark mb-3'>Iniciar sesión en Agrobime</h1>
-        <div className='text-gray-400 fw-bold fs-4'>
-          Eres Nuevo?{' '}
-          <Link to='/auth/registration' className='link-primary fw-bolder'>
-            Crea una cuenta
-          </Link>
-        </div>
       </div>
       {/* begin::Heading */}
 
@@ -116,7 +103,7 @@ export function Login() {
         <div className='d-flex justify-content-between mt-n5'>
           <div className='d-flex flex-stack mb-2'>
             {/* begin::Label */}
-            <label className='form-label fw-bolder text-dark fs-6 mb-0'>Password</label>
+            <label className='form-label fw-bolder text-dark fs-6 mb-0'>Contraseña</label>
             {/* end::Label */}
             {/* begin::Link */}
             <Link
@@ -124,7 +111,7 @@ export function Login() {
               className='link-primary fs-6 fw-bolder'
               style={{marginLeft: '5px'}}
             >
-              Forgot Password ?
+              Olvidó contraseña ?
             </Link>
             {/* end::Link */}
           </div>
@@ -164,47 +151,25 @@ export function Login() {
           {!loading && <span className='indicator-label'>Iniciar</span>}
           {loading && (
             <span className='indicator-progress' style={{display: 'block'}}>
-              Please wait...
+              Espere...
               <span className='spinner-border spinner-border-sm align-middle ms-2'></span>
             </span>
           )}
         </button>
 
         {/* begin::Separator */}
-        <div className='text-center text-muted text-uppercase fw-bolder mb-5'>or</div>
+        {/* <div className='text-center text-muted text-uppercase fw-bolder mb-5'>or</div> */}
         {/* end::Separator */}
 
         {/* begin::Google link */}
-        <a href='#' className='btn btn-flex flex-center btn-light btn-lg w-100 mb-5'>
+        {/* <a href='#' className='btn btn-flex flex-center btn-light btn-lg w-100 mb-5'>
           <img
             alt='Logo'
             src={toAbsoluteUrl('/media/svg/brand-logos/google-icon.svg')}
             className='h-20px me-3'
           />
           Iniciar con Google
-        </a>
-        {/* end::Google link */}
-
-        {/* begin::Google link */}
-        <a href='#' className='btn btn-flex flex-center btn-light btn-lg w-100 mb-5'>
-          <img
-            alt='Logo'
-            src={toAbsoluteUrl('/media/svg/brand-logos/facebook-4.svg')}
-            className='h-20px me-3'
-          />
-          Iniciar con Facebook
-        </a>
-        {/* end::Google link */}
-
-        {/* begin::Google link */}
-        <a href='#' className='btn btn-flex flex-center btn-light btn-lg w-100'>
-          <img
-            alt='Logo'
-            src={toAbsoluteUrl('/media/svg/brand-logos/apple-black.svg')}
-            className='h-20px me-3'
-          />
-          Iniciar con Apple
-        </a>
+        </a> */}
         {/* end::Google link */}
       </div>
       {/* end::Action */}
