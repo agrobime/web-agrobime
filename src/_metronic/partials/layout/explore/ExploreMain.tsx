@@ -2,7 +2,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import {Toggle} from './Toggle'
-import {Demos} from './Demos'
 import {KTSVG} from '../../../helpers'
 
 export function ExploreMain() {
@@ -139,7 +138,6 @@ export function ExploreMain() {
               <a href={process.env.REACT_APP_PURCHASE_URL} className='btn btn-primary mb-15 w-100'>
                 Buy Now
               </a>
-              <Demos />
             </div>
             {/* end::Content */}
           </div>

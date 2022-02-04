@@ -78,7 +78,7 @@ const Resumen: React.FC<Props> = ({className, chartColor, chartHeight, strokeCol
                 path='/media/icons/duotune/general/gen032.svg'
                 className='svg-icon-3x svg-icon-warning d-block my-2'
               />
-              <a href='#' className='text-warning fw-bold fs-6'>
+              <a href='/home' className='text-warning fw-bold fs-6'>
                 Trabajos Semanales
               </a>
             </div>
@@ -89,7 +89,7 @@ const Resumen: React.FC<Props> = ({className, chartColor, chartHeight, strokeCol
                 path='/media/icons/duotune/arrows/arr075.svg'
                 className='svg-icon-3x svg-icon-primary d-block my-2'
               />
-              <a href='#' className='text-primary fw-bold fs-6'>
+              <a href='/home' className='text-primary fw-bold fs-6'>
                 Agregar reporte
               </a>
             </div>
@@ -104,7 +104,7 @@ const Resumen: React.FC<Props> = ({className, chartColor, chartHeight, strokeCol
                 path='/media/icons/icar/farmer.svg'
                 className='svg-icon-3x svg-icon-danger d-block my-2'
               />
-              <a href='#' className='text-danger fw-bold fs-6 mt-2'>
+              <a href='/home' className='text-danger fw-bold fs-6 mt-2'>
                 Buscar Agrocultor
               </a>
             </div>
@@ -115,7 +115,7 @@ const Resumen: React.FC<Props> = ({className, chartColor, chartHeight, strokeCol
                 path='/media/icons/duotune/communication/com010.svg'
                 className='svg-icon-3x svg-icon-success d-block my-2'
               />
-              <a href='#' className='text-success fw-bold fs-6 mt-2'>
+              <a href='/home' className='text-success fw-bold fs-6 mt-2'>
                 Reportes
               </a>
             </div>

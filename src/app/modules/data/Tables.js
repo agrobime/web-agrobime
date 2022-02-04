@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import TableForm from "./TableForm"
 import firebaseDb from "../../firebase";
-import { KTSVG, toAbsoluteUrl } from '../../../_metronic/helpers'
-const fs = require('fs')
+import { KTSVG } from '../../../_metronic/helpers'
 const FileSaver = require('file-saver');
-
 
 const TablesFB = () => {
 
@@ -33,10 +31,10 @@ const TablesFB = () => {
 
         })
 
-    }, [])// similar to componentDidMount
+    }, [])
 
     const addOrEdit = obj => {
-        if (currentId == '')
+        if (currentId === '')
             firebaseDb.child('measurements').push(
                 obj,
                 err => {
@@ -73,32 +71,18 @@ const TablesFB = () => {
     }
 
     const onDelete = key => {
-        // if (window.confirm('Estás seguro de eliminar?')) {
-            // debugger
-            firebaseDb.child(`measurements/${key}`).remove(
-                err => {
-                    if (err)
-                        console.log(err)
-                    else
-                        setCurrentId('')
-                }
-            )
-        // }
+        firebaseDb.child(`measurements/${key}`).remove(
+            err => {
+                if (err)
+                    console.log(err)
+                else
+                    setCurrentId('')
+            }
+        )
     }
-
-    // for(const [key, value] of Object.entries(dataFb)){
-    //     // console.log(key)
-    //     // onDelete(key)
-    // }
 
     return (
         <>
-            {/* <div className="row">
-                <div className="col-md-12 py-5">
-                    <TableForm {...({ addOrEdit, currentId, dataFb })} />
-                </div>
-            </div> */}
-
             <div className="row">
                 <div className="col-md-12">
                     <h3 className="text-center py-5">Mediciones durante el día</h3>
@@ -121,15 +105,8 @@ const TablesFB = () => {
                                         <td className='px-5'>{dataFb[id].humidity}</td>
                                         <td className='px-5'>{dataFb[id].address}</td>
                                         <td className='px-5'>
-                                            <a className="btn text-primary" onClick={() => { setCurrentId(id) }}>
-                                                <a href='/dashboard' className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'>
-                                                    <KTSVG path='/media/icons/icar/edit.svg' className='svg-icon-3' />
-                                                </a>
-                                            </a>
-                                            <a className="btn text-danger" onClick={() => { onDelete(id); }}>
-                                                <a href='#' className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'>
-                                                    <KTSVG path='/media/icons/icar/delete.svg' className='svg-icon-3' />
-                                                </a>
+                                            <a href='/estadisticas' className="btn text-danger" onClick={() => { onDelete(id); }}>
+                                                <KTSVG path='/media/icons/icar/delete.svg' className='svg-icon-3' />
                                             </a>
                                         </td>
                                     </tr>

@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react'
-import { KTSVG, toAbsoluteUrl } from '../../../_metronic/helpers'
 
 export default class Home extends Component {
 

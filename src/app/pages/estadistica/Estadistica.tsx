@@ -1,7 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { FC } from 'react'
-import { useIntl } from 'react-intl'
-import { PageTitle } from '../../../_metronic/layout/core'
+import { FC } from 'react'
 import { TablesBody } from './componentes/Tables'
 import TablesFB from '../../modules/data/Tables'
 

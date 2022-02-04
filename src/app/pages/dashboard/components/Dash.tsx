@@ -74,7 +74,7 @@ const Dash: React.FC<Props> = ({ className, chartColor, chartHeight, strokeColor
                 path='/media/icons/icar/sales.svg'
                 className='svg-icon-3x svg-icon-warning d-block my-2'
               />
-              <a href='#' className='text-warning fw-bold fs-6'>
+              <a href='/home' className='text-warning fw-bold fs-6'>
                 Ventas Semanales
               </a>
             </div>
@@ -85,7 +85,7 @@ const Dash: React.FC<Props> = ({ className, chartColor, chartHeight, strokeColor
                 path='/media/icons/icar/descargar.svg'
                 className='svg-icon-3x svg-icon-primary d-block my-2'
               />
-              <a href='#' className='text-primary fw-bold fs-6'>
+              <a href='/dashboard' className='text-primary fw-bold fs-6'>
                 Descargar reporte
               </a>
             </div>
@@ -100,7 +100,7 @@ const Dash: React.FC<Props> = ({ className, chartColor, chartHeight, strokeColor
                 path='/media/icons/icar/transport.svg'
                 className='svg-icon-3x svg-icon-danger d-block my-2'
               />
-              <a href='#' className='text-danger fw-bold fs-6 mt-2'>
+              <a href='/dashboard' className='text-danger fw-bold fs-6 mt-2'>
                 Buscar transportista
               </a>
             </div>
@@ -111,7 +111,7 @@ const Dash: React.FC<Props> = ({ className, chartColor, chartHeight, strokeColor
                 path='/media/icons/icar/report-historial.svg'
                 className='svg-icon-3x svg-icon-success d-block my-2'
               />
-              <a href='#' className='text-success fw-bold fs-6 mt-2'>
+              <a href='/dashboard' className='text-success fw-bold fs-6 mt-2'>
                 Historial de Reportes
               </a>
             </div>

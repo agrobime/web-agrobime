@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { Component } from 'react'
-import { KTSVG, toAbsoluteUrl } from '../../../../_metronic/helpers'
+import { Component } from 'react'
+import { KTSVG } from '../../../../_metronic/helpers'
 
 
 

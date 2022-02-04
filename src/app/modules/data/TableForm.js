@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { KTSVG, toAbsoluteUrl } from '../../../_metronic/helpers'
+import { KTSVG } from '../../../_metronic/helpers'
 
 const TableForm = (props) => {
     const initialFieldValues = {
@@ -12,7 +12,7 @@ const TableForm = (props) => {
     var [values, setValues] = useState(initialFieldValues)
 
     useEffect(() => {
-        if (props.currentId == '')
+        if (props.currentId === '')
             setValues({
                 ...initialFieldValues
             })
@@ -31,11 +31,6 @@ const TableForm = (props) => {
     }
     const handleFormSubmit = e => {
         e.preventDefault();
-        // setValues({
-        //     date: '2022', 
-        //     temperature: '25', 
-        //     humidity: '75', 
-        //     address: 'espinaca'})
         props.addOrEdit(values)
     }
 
@@ -104,7 +99,7 @@ const TableForm = (props) => {
                 </div>
                 <div className="col-md-2">
                     <div className="form-group">
-                        <input type="submit" value={props.currentId == '' ? "Registrar" : "Actualizar"} className="btn btn-primary btn-block" />
+                        <input type="submit" value={props.currentId === '' ? "Registrar" : "Actualizar"} className="btn btn-primary btn-block" />
                     </div>
                 </div>
 
