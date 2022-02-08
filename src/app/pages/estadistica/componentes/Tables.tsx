@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Component } from 'react'
 import { useState, useEffect } from 'react';
 import { KTSVG } from '../../../../_metronic/helpers'
 
@@ -67,7 +66,7 @@ const TablesBody = () => {
 
   useEffect(() => {
     setDataIot(data)
-  }, []);
+  });
 
 
   return (
