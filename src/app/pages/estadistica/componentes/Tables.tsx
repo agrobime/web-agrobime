@@ -6,67 +6,66 @@ const TablesBody = () => {
 
   const [dataIot, setDataIot] = useState([{}]);
 
-  const data = [
-    {
-      "fecha": "2021-11-13 12:30",
-      "humedad": 50,
-      "humedadSuelo": 50.3,
-      "indicadorCampo": 97,
-      "indiceCalor": 40,
-      "ph": 6,
-      "temperatura": 27
-    },
-    {
-      "fecha": "2021-11-13 12:30",
-      "humedad": 23,
-      "humedadSuelo": 50.3,
-      "indicadorCampo": 83,
-      "indiceCalor": 40,
-      "ph": 6,
-      "temperatura": 27
-    },
-    {
-      "fecha": "2021-11-13 12:30",
-      "humedad": 54,
-      "humedadSuelo": 50.3,
-      "indicadorCampo": 87,
-      "indiceCalor": 40,
-      "ph": 6,
-      "temperatura": 27
-    },
-    {
-      "fecha": "2021-11-13 12:30",
-      "humedad": 46,
-      "humedadSuelo": 50.3,
-      "indicadorCampo": 99,
-      "indiceCalor": 40,
-      "ph": 6,
-      "temperatura": 27
-    },
-    {
-      "fecha": "2021-11-13 12:30",
-      "humedad": 48,
-      "humedadSuelo": 50.3,
-      "indicadorCampo": 95,
-      "indiceCalor": 40,
-      "ph": 6,
-      "temperatura": 27
-    },
-    {
-      "fecha": "2021-11-13 12:30",
-      "humedad": 50,
-      "humedadSuelo": 50.3,
-      "indicadorCampo": 98,
-      "indiceCalor": 40,
-      "ph": 6,
-      "temperatura": 27
-    },
-
-  ]
-
   useEffect(() => {
+    const data = [
+      {
+        "fecha": "2021-11-13 12:30",
+        "humedad": 50,
+        "humedadSuelo": 50.3,
+        "indicadorCampo": 97,
+        "indiceCalor": 40,
+        "ph": 6,
+        "temperatura": 27
+      },
+      {
+        "fecha": "2021-11-13 12:30",
+        "humedad": 23,
+        "humedadSuelo": 50.3,
+        "indicadorCampo": 83,
+        "indiceCalor": 40,
+        "ph": 6,
+        "temperatura": 27
+      },
+      {
+        "fecha": "2021-11-13 12:30",
+        "humedad": 54,
+        "humedadSuelo": 50.3,
+        "indicadorCampo": 87,
+        "indiceCalor": 40,
+        "ph": 6,
+        "temperatura": 27
+      },
+      {
+        "fecha": "2021-11-13 12:30",
+        "humedad": 46,
+        "humedadSuelo": 50.3,
+        "indicadorCampo": 99,
+        "indiceCalor": 40,
+        "ph": 6,
+        "temperatura": 27
+      },
+      {
+        "fecha": "2021-11-13 12:30",
+        "humedad": 48,
+        "humedadSuelo": 50.3,
+        "indicadorCampo": 95,
+        "indiceCalor": 40,
+        "ph": 6,
+        "temperatura": 27
+      },
+      {
+        "fecha": "2021-11-13 12:30",
+        "humedad": 50,
+        "humedadSuelo": 50.3,
+        "indicadorCampo": 98,
+        "indiceCalor": 40,
+        "ph": 6,
+        "temperatura": 27
+      },
+
+    ]
     setDataIot(data)
-  });
+  }, []);
 
 
   return (
@@ -78,7 +77,7 @@ const TablesBody = () => {
           <span className='card-label fw-bolder fs-3 mb-1'>Mediciones en el módulo Chao 25</span>
         </h3>
         <div className='card-toolbar'>
-          <a href='#' className='btn btn-sm btn-light-primary' onClick={()=>{console.log(dataIot[0])}}>
+          <a href='#' className='btn btn-sm btn-light-primary' onClick={() => { console.log(dataIot[0]) }}>
             <KTSVG path='/media/icons/duotune/arrows/arr075.svg' className='svg-icon-2' />
             Medir
           </a>
@@ -88,12 +87,8 @@ const TablesBody = () => {
 
       {/* begin::Body */}
       <div className='card-body py-3'>
-        {/* begin::Table container */}
         <div className='table-responsive'>
-          {/* begin::Table */}
-          {/* end::Table */}
         </div>
-        {/* end::Table container */}
       </div>
       {/* begin::Body */}
 
