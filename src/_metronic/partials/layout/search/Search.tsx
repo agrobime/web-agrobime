@@ -98,7 +98,7 @@ const Search: FC = () => {
                 type='text'
                 className='form-control form-control-flush ps-10'
                 name='search'
-                placeholder='Search...'
+                placeholder='Buscar...'
                 data-kt-search-element='input'
               />
 
@@ -361,7 +361,7 @@ const Search: FC = () => {
 
             <div ref={suggestionsElement} className='mb-4' data-kt-search-element='main'>
               <div className='d-flex flex-stack fw-bold mb-4'>
-                <span className='text-muted fs-6 me-2'>Recently Searched:</span>
+                <span className='text-muted fs-6 me-2'>Búsquedas recientes:</span>
               </div>
 
               <div className='scroll-y mh-200px mh-lg-325px'>
@@ -377,7 +377,7 @@ const Search: FC = () => {
 
                   <div className='d-flex flex-column'>
                     <a href='/#' className='fs-6 text-gray-800 text-hover-primary fw-bold'>
-                      BoomApp by Keenthemes
+                      Centrifugado
                     </a>
                     <span className='fs-7 text-muted fw-bold'>#45789</span>
                   </div>
@@ -395,99 +395,9 @@ const Search: FC = () => {
 
                   <div className='d-flex flex-column'>
                     <a href='/#' className='fs-6 text-gray-800 text-hover-primary fw-bold'>
-                      "Kept API Project Meeting
+                      Riego adecuado
                     </a>
                     <span className='fs-7 text-muted fw-bold'>#84050</span>
-                  </div>
-                </div>
-
-                <div className='d-flex align-items-center mb-5'>
-                  <div className='symbol symbol-40px me-4'>
-                    <span className='symbol-label bg-light'>
-                      <KTSVG
-                        path='/media/icons/duotune/graphs/gra006.svg'
-                        className='svg-icon-2 svg-icon-primary'
-                      />
-                    </span>
-                  </div>
-
-                  <div className='d-flex flex-column'>
-                    <a href='/#' className='fs-6 text-gray-800 text-hover-primary fw-bold'>
-                      "KPI Monitoring App Launch
-                    </a>
-                    <span className='fs-7 text-muted fw-bold'>#84250</span>
-                  </div>
-                </div>
-
-                <div className='d-flex align-items-center mb-5'>
-                  <div className='symbol symbol-40px me-4'>
-                    <span className='symbol-label bg-light'>
-                      <KTSVG
-                        path='/media/icons/duotune/graphs/gra002.svg'
-                        className='svg-icon-2 svg-icon-primary'
-                      />
-                    </span>
-                  </div>
-
-                  <div className='d-flex flex-column'>
-                    <a href='/#' className='fs-6 text-gray-800 text-hover-primary fw-bold'>
-                      Project Reference FAQ
-                    </a>
-                    <span className='fs-7 text-muted fw-bold'>#67945</span>
-                  </div>
-                </div>
-
-                <div className='d-flex align-items-center mb-5'>
-                  <div className='symbol symbol-40px me-4'>
-                    <span className='symbol-label bg-light'>
-                      <KTSVG
-                        path='/media/icons/duotune/communication/com010.svg'
-                        className='svg-icon-2 svg-icon-primary'
-                      />
-                    </span>
-                  </div>
-
-                  <div className='d-flex flex-column'>
-                    <a href='/#' className='fs-6 text-gray-800 text-hover-primary fw-bold'>
-                      "FitPro App Development
-                    </a>
-                    <span className='fs-7 text-muted fw-bold'>#84250</span>
-                  </div>
-                </div>
-
-                <div className='d-flex align-items-center mb-5'>
-                  <div className='symbol symbol-40px me-4'>
-                    <span className='symbol-label bg-light'>
-                      <KTSVG
-                        path='/media/icons/duotune/finance/fin001.svg'
-                        className='svg-icon-2 svg-icon-primary'
-                      />
-                    </span>
-                  </div>
-
-                  <div className='d-flex flex-column'>
-                    <a href='/#' className='fs-6 text-gray-800 text-hover-primary fw-bold'>
-                      Shopix Mobile App
-                    </a>
-                    <span className='fs-7 text-muted fw-bold'>#45690</span>
-                  </div>
-                </div>
-
-                <div className='d-flex align-items-center mb-5'>
-                  <div className='symbol symbol-40px me-4'>
-                    <span className='symbol-label bg-light'>
-                      <KTSVG
-                        path='/media/icons/duotune/graphs/gra002.svg'
-                        className='svg-icon-2 svg-icon-primary'
-                      />
-                    </span>
-                  </div>
-
-                  <div className='d-flex flex-column'>
-                    <a href='/#' className='fs-6 text-gray-800 text-hover-primary fw-bold'>
-                      "Landing UI Design" Launch
-                    </a>
-                    <span className='fs-7 text-muted fw-bold'>#24005</span>
                   </div>
                 </div>
               </div>

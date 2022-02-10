@@ -62,7 +62,7 @@ const MenuInnerWithSub: React.FC<Props> = ({
           </span>
         )}
 
-        <span className='menu-title'>{title}</span>
+        <span className='menu-title text-light'>{title}</span>
 
         {hasArrow && <span className='menu-arrow'></span>}
       </span>

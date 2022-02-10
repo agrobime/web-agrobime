@@ -14,7 +14,7 @@ const HeaderNotificationsMenu: FC = () => (
       style={{backgroundImage: `url('${toAbsoluteUrl('/media/misc/pattern-1.jpg')}')`}}
     >
       <h3 className='text-white fw-bold px-9 mt-10 mb-6'>
-        Notifications <span className='fs-8 opacity-75 ps-3'>24 reports</span>
+        Notificationes <span className='fs-8 opacity-75 ps-3'>24 reportes</span>
       </h3>
 
       <ul className='nav nav-line-tabs nav-line-tabs-2x nav-stretch fw-bold px-9'>
@@ -24,7 +24,7 @@ const HeaderNotificationsMenu: FC = () => (
             data-bs-toggle='tab'
             href='#kt_topbar_notifications_1'
           >
-            Alerts
+            Alertas
           </a>
         </li>
 
@@ -34,7 +34,7 @@ const HeaderNotificationsMenu: FC = () => (
             data-bs-toggle='tab'
             href='#kt_topbar_notifications_2'
           >
-            Updates
+            Actualizaciones
           </a>
         </li>
 
@@ -44,7 +44,7 @@ const HeaderNotificationsMenu: FC = () => (
             data-bs-toggle='tab'
             href='#kt_topbar_notifications_3'
           >
-            Logs
+            Actividades
           </a>
         </li>
       </ul>

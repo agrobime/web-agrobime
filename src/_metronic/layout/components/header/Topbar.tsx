@@ -56,7 +56,7 @@ const Topbar: FC = () => {
               className={toolbarButtonIconSizeClass}
             />
           </div>
-          <HeaderNotificationsMenu />
+          {/* <HeaderNotificationsMenu /> */}
           {/* end::Menu wrapper */}
         </div>
 

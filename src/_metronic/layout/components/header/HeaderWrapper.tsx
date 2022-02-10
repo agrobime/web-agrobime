@@ -1,18 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import clsx from 'clsx'
-import React from 'react'
-import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap-v5'
+import { Navbar, Container, Nav } from 'react-bootstrap-v5'
 import { Link } from 'react-router-dom'
-import { KTSVG, toAbsoluteUrl } from '../../../helpers'
-import { useLayout } from '../../core'
-import { Header } from './Header'
-import { DefaultTitle } from './page-title/DefaultTitle'
+import { toAbsoluteUrl } from '../../../helpers'
 import { Topbar } from './Topbar'
 import { MenuInner } from './MenuInner'
 
 export function HeaderWrapper() {
-  const { config, classes, attributes } = useLayout()
-  const { header, aside } = config
 
   return (
     <>
@@ -34,7 +27,6 @@ export function HeaderWrapper() {
               <MenuInner />
             </Nav>
             <Nav className="ms-auto">
-              {/* <MenuInner/> */}
               <Topbar />
             </Nav>
           </Navbar.Collapse>

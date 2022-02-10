@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ContactForm from "./ContactForm"
+// import ContactForm from "./ContactForm"
 import firebaseDb from "../../../firebase";
 
 const Contacts = () => {
@@ -58,11 +58,11 @@ const Contacts = () => {
 
     return (
         <>
-            
+
             <div className="row">
-                <div className="col-md-5">
+                {/* <div className="col-md-5">
                     <ContactForm {...({ addOrEdit, currentId, contactObjects })} />
-                </div>
+                </div> */}
                 <div className="col-md-7">
                     <table className="table table-borderless table-stripped">
                         <thead className="thead-light">
