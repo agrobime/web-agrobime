@@ -10,7 +10,7 @@ const toolbarButtonMarginClass = 'ms-1 ms-lg-3',
 
 const Topbar: FC = () => {
   return (
-    <div className='d-flex align-items-stretch flex-shrink-0'>
+    <div className='d-flex align-items-stretch flex-shrink-0 m-auto py-3'>
       <div className='topbar d-flex align-items-stretch flex-shrink-0'>
         
         {/* Search */}

@@ -18,12 +18,24 @@ export function HeaderWrapper() {
     <>
       <Navbar collapseOnSelect expand="lg" bg="none" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">AgroBime</Navbar.Brand>
+          <Navbar.Brand href="/">
+            <Link to='/'>
+              <img
+                alt='Logo'
+                src={toAbsoluteUrl('/media/logos/agrobime.ico')}
+                className='logo-default h-25px'
+              />
+            </Link>{' '}
+            AgroBime
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="m-auto">
-              <MenuInner/>
-              {/* <Topbar /> */}
+            <Nav className="ms-auto">
+              <MenuInner />
+            </Nav>
+            <Nav className="ms-auto">
+              {/* <MenuInner/> */}
+              <Topbar />
             </Nav>
           </Navbar.Collapse>
         </Container>

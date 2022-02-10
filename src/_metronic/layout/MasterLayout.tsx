@@ -8,7 +8,7 @@ import { PageDataProvider, useLayout } from './core'
 import { useLocation } from 'react-router-dom'
 import {
   DrawerMessenger,
-  ExploreMain,
+  Explore,
   ActivityDrawer,
   Main,
   InviteUsers,
@@ -57,7 +57,7 @@ const MasterLayout: React.FC = ({ children }) => {
 
       {/* begin:: Drawers */}
       <ActivityDrawer />
-      <ExploreMain />
+      <Explore />
       <DrawerMessenger />
       {/* end:: Drawers */}
 

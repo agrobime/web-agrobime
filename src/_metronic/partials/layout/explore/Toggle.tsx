@@ -9,7 +9,7 @@ const Toggle: FC = () => (
     data-bs-placement='right'
     data-bs-trigger='hover'
   >
-    <span id='kt_explore_toggle_label'>Explore</span>
+    <span id='kt_explore_toggle_label'>Recientes</span>
   </button>
 )
 
