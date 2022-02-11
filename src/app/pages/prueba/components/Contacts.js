@@ -5,7 +5,7 @@ import firebaseDb from "../../../firebase";
 const Contacts = () => {
 
     var [contactObjects, setContactObjects] = useState({})
-    var [currentId, setCurrentId] = useState('')
+    // var [currentId, setCurrentId] = useState('')
 
     useEffect(() => {
         firebaseDb.child('users').on('value', snapshot => {
@@ -19,42 +19,42 @@ const Contacts = () => {
         })
     }, [])// similar to componentDidMount
 
-    const addOrEdit = obj => {
-        if (currentId === '')
-            firebaseDb.child('users').push(
-                obj,
-                err => {
-                    if (err)
-                        console.log(err)
-                    else
-                        setCurrentId('')
-                }
-            )
-        else
-            firebaseDb.child(`users/${currentId}`).set(
-                obj,
-                err => {
-                    if (err)
-                        console.log(err)
-                    else
-                        setCurrentId('')
-                }
-            )
-    }
+    // const addOrEdit = obj => {
+    //     if (currentId === '')
+    //         firebaseDb.child('users').push(
+    //             obj,
+    //             err => {
+    //                 if (err)
+    //                     console.log(err)
+    //                 else
+    //                     setCurrentId('')
+    //             }
+    //         )
+    //     else
+    //         firebaseDb.child(`users/${currentId}`).set(
+    //             obj,
+    //             err => {
+    //                 if (err)
+    //                     console.log(err)
+    //                 else
+    //                     setCurrentId('')
+    //             }
+    //         )
+    // }
 
-    const onDelete = key => {
-        if (window.confirm('Are you sure to delete this record?')) {
-            debugger
-            firebaseDb.child(`users/${key}`).remove(
-                err => {
-                    if (err)
-                        console.log(err)
-                    else
-                        setCurrentId('')
-                }
-            )
-        }
-    }
+    // const onDelete = key => {
+    //     if (window.confirm('Are you sure to delete this record?')) {
+    //         debugger
+    //         firebaseDb.child(`users/${key}`).remove(
+    //             err => {
+    //                 if (err)
+    //                     console.log(err)
+    //                 else
+    //                     setCurrentId('')
+    //             }
+    //         )
+    //     }
+    // }
 
     return (
         <>
@@ -80,14 +80,14 @@ const Contacts = () => {
                                         <td>{contactObjects[id].fullName}</td>
                                         <td>{contactObjects[id].mobile}</td>
                                         <td>{contactObjects[id].email}</td>
-                                        <td>
+                                        {/* <td>
                                             <a href="/home" className="btn text-primary" onClick={() => { setCurrentId(id) }}>
                                                 <i className="fas fa-pencil-alt"></i>
                                             </a>
                                             <a href="/home" className="btn text-danger" onClick={() => { onDelete(id) }}>
                                                 <i className="far fa-trash-alt"></i>
                                             </a>
-                                        </td>
+                                        </td> */}
                                     </tr>
                                 })
                             }

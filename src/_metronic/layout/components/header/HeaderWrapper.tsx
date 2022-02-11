@@ -11,15 +11,15 @@ export function HeaderWrapper() {
     <>
       <Navbar collapseOnSelect expand="lg" bg="none" variant="dark">
         <Container>
-          <Navbar.Brand href="/">
-            <Link to='/'>
+          <Navbar.Brand>
+            <Link to='/home'>
               <img
                 alt='Logo'
                 src={toAbsoluteUrl('/media/logos/agrobime.ico')}
                 className='logo-default h-25px'
-              />
-            </Link>{' '}
-            AgroBime
+              /> {' '}
+              <span className='text-light'>AgroBime</span>
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
