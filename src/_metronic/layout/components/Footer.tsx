@@ -13,7 +13,7 @@ const Footer: FC = () => {
         {/* begin::Copyright */}
         <div className='text-dark order-2 order-md-1'>
           <span className='text-muted fw-bold me-2'>{new Date().getFullYear()} &copy;</span>
-          <a href='#' className='text-gray-800 text-hover-primary'>
+          <a href='/home' className='text-gray-800 text-hover-primary'>
             Agrobime
           </a>
         </div>
@@ -22,20 +22,20 @@ const Footer: FC = () => {
         {/* begin::Nav */}
         <ul className='menu menu-gray-600 menu-hover-primary fw-bold order-1'>
           <li className='menu-item'>
-            <a href='#' className='menu-link ps-0 pe-2'>
+            <a href='https://agrobimedatos.web.app/' target="_blank" rel="noopener noreferrer" className='menu-link ps-0 pe-2'>
               Nosotros
             </a>
           </li>
           <li className='menu-item'>
-            <a href='#' className='menu-link pe-0 pe-2'>
+            <a href='https://api.whatsapp.com/send/?phone=51945341140&text&app_absent=0' target="_blank" rel="noopener noreferrer" className='menu-link pe-0 pe-2'>
               Contacto
             </a>
           </li>
-          <li className='menu-item'>
-            <a href='#' className='menu-link pe-0'>
+          {/* <li className='menu-item'>
+            <a href='' className='menu-link pe-0'>
               Compras
             </a>
-          </li>
+          </li> */}
         </ul>
         {/* end::Nav */}
       </div>

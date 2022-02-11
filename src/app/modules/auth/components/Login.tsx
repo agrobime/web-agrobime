@@ -42,7 +42,7 @@ export function Login() {
           .catch(() => {
             setLoading(false)
             setSubmitting(false)
-            setStatus('The login detail is incorrect')
+            setStatus('Inicio de sesión incorrecto')
           })
       }, 1000)
     },
