@@ -39,7 +39,7 @@ const Dash: React.FC<Props> = ({ className, chartColor, chartHeight, strokeColor
     <div className={`card ${className}`}>
       {/* begin::Header */}
       <div className={`card-header border-0 py-5 bg-${chartColor}`}>
-        <h3 className='card-title fw-bolder text-white'>AGROBIME - AGRICULTOR</h3>
+        <h3 className='card-title fw-bolder text-white'>AGROBIME - BIOHUERTO</h3>
         <div className='card-toolbar'>
           {/* begin::Menu */}
           <button

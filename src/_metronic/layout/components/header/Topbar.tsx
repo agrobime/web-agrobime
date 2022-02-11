@@ -1,7 +1,11 @@
 import clsx from 'clsx'
 import React, { FC } from 'react'
-import { KTSVG, toAbsoluteUrl } from '../../../helpers'
+import { KTSVG } from '../../../helpers'
 import { HeaderUserMenu, Search } from '../../../partials'
+
+import { shallowEqual, useSelector } from 'react-redux'
+import { UserModel } from '../../../../app/modules/auth/models/UserModel'
+import { RootState } from '../../../../setup'
 
 const toolbarButtonMarginClass = 'ms-1 ms-lg-3',
   toolbarButtonHeightClass = 'w-30px h-30px w-md-40px h-md-40px',
@@ -9,10 +13,12 @@ const toolbarButtonMarginClass = 'ms-1 ms-lg-3',
   toolbarButtonIconSizeClass = 'svg-icon-1'
 
 const Topbar: FC = () => {
+  const user: UserModel = useSelector<RootState>(({ auth }) => auth.user, shallowEqual) as UserModel
+  const { pic } = user
   return (
     <div className='d-flex align-items-stretch flex-shrink-0 m-auto py-3'>
       <div className='topbar d-flex align-items-stretch flex-shrink-0'>
-        
+
         {/* Search */}
         <div className={clsx('d-flex align-items-stretch', toolbarButtonMarginClass)}>
           <Search />
@@ -75,7 +81,7 @@ const Topbar: FC = () => {
           >
             <img
               className='h-25px w-25px rounded'
-              src={toAbsoluteUrl('/media/icons/icar/user1.svg')}
+              src={pic}
               alt='metronic'
             />
           </div>

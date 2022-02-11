@@ -20,6 +20,7 @@ const TablesFB = () => {
             } else { setDataFb({}) }
         })
 
+        /** TODA LA BASE DE DATOS */
         // firebaseDb.child('/').on('value', snapshot => {
         //     if (snapshot.val() != null) {
         //         setDataTotal({
@@ -31,6 +32,7 @@ const TablesFB = () => {
         // })
     }, []) //si no hay nada escuchando se pone []
 
+    /** FUNCIONES TEMPORALES */
     // const objAddOrDelete = {
     //     "-MuFcTgO5rtqqUAGUYVE": {
     //         "humS": "U43U159U47",

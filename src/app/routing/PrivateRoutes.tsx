@@ -8,6 +8,7 @@ import { Estadistica_t } from '../pages/estadisticas-t/Estadistica-t'
 import { DashboardWrapperTrans } from '../pages/dashboard_t/DashboardWrapper'
 import { Home } from '../pages/home/Home'
 import { Prueba } from '../pages/prueba/Prueba'
+import { Admin } from '../pages/admin/Admin'
 
 export function PrivateRoutes() {
   const BuilderPageWrapper = lazy(() => import('../pages/layout-builder/BuilderPageWrapper'))
@@ -23,6 +24,7 @@ export function PrivateRoutes() {
         <Route path='/dashboard' component={DashboardWrapper} />
         <Route path='/dashboard-t' component={DashboardWrapperTrans} />
         <Route path='/home' component={Home} />
+        <Route path='/admin' component={Admin} />
         <Route path='/prueba' component={Prueba} />
         <Route path='/builder' component={BuilderPageWrapper} />
         <Route path='/estadisticas' component={Estadistica} />
@@ -33,8 +35,8 @@ export function PrivateRoutes() {
         <Route path='/crafted/account' component={AccountPage} />
         <Route path='/apps/chat' component={ChatPage} />
         <Route path='/menu-test' component={MenuTestPage} />
-        <Redirect from='/auth' to='/dashboard' />
-        <Redirect exact from='/' to='/dashboard' />
+        <Redirect from='/auth' to='/home' />
+        <Redirect exact from='/' to='/home' />
         <Redirect to='error/404' />
       </Switch>
     </Suspense>

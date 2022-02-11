@@ -14,9 +14,6 @@ const HeaderUserMenu: FC = () => {
   const logout = () => {
     dispatch(auth.actions.logout())
   }
-  user.firstname = 'Caleb'
-  user.lastname = 'Ventura'
-  user.pic = '/media/icons/icar/user1.svg'
 
   return (
     <div
