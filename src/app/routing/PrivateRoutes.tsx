@@ -1,42 +1,28 @@
-import React, { Suspense, lazy } from 'react'
+import React, { Suspense } from 'react'
 import { Redirect, Route, Switch } from 'react-router-dom'
 import { FallbackView } from '../../_metronic/partials'
 import { DashboardWrapper } from '../pages/dashboard/DashboardWrapper'
-import { MenuTestPage } from '../pages/MenuTestPage'
 import { Estadistica } from '../pages/estadistica/Estadistica'
-import { Estadistica_t } from '../pages/estadisticas-t/Estadistica-t'
-import { DashboardWrapperTrans } from '../pages/dashboard_t/DashboardWrapper'
 import { Home } from '../pages/home/Home'
-import { Prueba } from '../pages/prueba/Prueba'
 import { Admin } from '../pages/admin/Admin'
 
+import { shallowEqual, useSelector } from 'react-redux'
+import { UserModel } from '../../app/modules/auth/models/UserModel'
+import { RootState } from '../../setup'
+
 export function PrivateRoutes() {
-  const BuilderPageWrapper = lazy(() => import('../pages/layout-builder/BuilderPageWrapper'))
-  const ProfilePage = lazy(() => import('../modules/profile/ProfilePage'))
-  const WizardsPage = lazy(() => import('../modules/wizards/WizardsPage'))
-  const AccountPage = lazy(() => import('../modules/accounts/AccountPage'))
-  const WidgetsPage = lazy(() => import('../modules/widgets/WidgetsPage'))
-  const ChatPage = lazy(() => import('../modules/apps/chat/ChatPage'))
+  const user: UserModel = useSelector<RootState>(({ auth }) => auth.user, shallowEqual) as UserModel
+  const { email } = user
 
   return (
     <Suspense fallback={<FallbackView />}>
       <Switch>
-        <Route path='/dashboard' component={DashboardWrapper} />
-        <Route path='/dashboard-t' component={DashboardWrapperTrans} />
-        <Route path='/home' component={Home} />
         <Route path='/admin' component={Admin} />
-        <Route path='/prueba' component={Prueba} />
-        <Route path='/builder' component={BuilderPageWrapper} />
+        <Route path='/dashboard' component={DashboardWrapper} />
+        <Route path='/home' component={Home} />
         <Route path='/estadisticas' component={Estadistica} />
-        <Route path='/estadisticas-t' component={Estadistica_t} />
-        <Route path='/crafted/pages/profile' component={ProfilePage} />
-        <Route path='/crafted/pages/wizards' component={WizardsPage} />
-        <Route path='/crafted/widgets' component={WidgetsPage} />
-        <Route path='/crafted/account' component={AccountPage} />
-        <Route path='/apps/chat' component={ChatPage} />
-        <Route path='/menu-test' component={MenuTestPage} />
         <Redirect from='/auth' to='/home' />
-        <Redirect exact from='/' to='/home' />
+        <Redirect exact from='*' to='/home' />
         <Redirect to='error/404' />
       </Switch>
     </Suspense>

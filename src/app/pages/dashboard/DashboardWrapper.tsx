@@ -3,7 +3,7 @@ import React, { FC } from 'react'
 import { useIntl } from 'react-intl'
 import { PageTitle } from '../../../_metronic/layout/core'
 import { Dash } from './components/Dash'
-import {MixedWidget11} from '../../../_metronic/partials/widgets/mixed/MixedWidget11'
+import { MixedWidget11 } from '../../../_metronic/partials/widgets/mixed/MixedWidget11'
 
 const DashboardPage: FC = () => (
   <>
@@ -17,7 +17,7 @@ const DashboardPage: FC = () => (
           strokeColor='#cb1e46'
         />
       </div>
-      
+
       <div className='col-xxl-12'>
         <MixedWidget11
           className='card-xl-stretch mb-xl-8'
