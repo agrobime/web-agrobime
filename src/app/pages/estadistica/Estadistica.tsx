@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { FC } from 'react'
-import TablesFB from '../../modules/data/Tables'
+import TablesX from '../../modules/data/Tables'
 
 const Estadistica: FC = () => (
     <>
@@ -8,7 +8,7 @@ const Estadistica: FC = () => (
             <div className='col-xxl-12'>
                 <div className="card card-xxl-stretch mb-5 mb-xl-8">
                     <div className="card-body py-3">
-                        <TablesFB />
+                        <TablesX />
                     </div>
                 </div>
             </div>
