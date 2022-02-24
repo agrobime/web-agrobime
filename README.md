@@ -1,5 +1,2 @@
-# agrobime
-# agrobime.github.io
-# agrobime.github.io
 # web-agrobime
-El proyecto ha sido publicado en
+El proyecto ha sido publicado en https://agrobimedatos.web.app/home
