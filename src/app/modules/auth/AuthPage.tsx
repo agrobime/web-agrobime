@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {useEffect} from 'react'
-import {Redirect, Route, Switch} from 'react-router-dom'
+import {Redirect, Route, Switch, Link} from 'react-router-dom'
 import {Registration} from './components/Registration'
 import {ForgotPassword} from './components/ForgotPassword'
 import {Login} from './components/Login'
@@ -24,9 +24,9 @@ export function AuthPage() {
       {/* begin::Content */}
       <div className='d-flex flex-center flex-column flex-column-fluid p-10 pb-lg-20'>
         {/* begin::Logo */}
-        <a href='#' className='mb-12'>
+        <Link to='/home' className='mb-12'>
           <img alt='Logo' src={toAbsoluteUrl('/media/icons/agrobime.png')} className='h-45px' />
-        </a>
+        </Link>
         {/* end::Logo */}
         {/* begin::Wrapper */}
         <div className='w-lg-500px bg-white rounded shadow-sm p-10 p-lg-15 mx-auto'>
@@ -37,6 +37,9 @@ export function AuthPage() {
             <Redirect from='/auth' exact={true} to='/auth/login' />
             <Redirect to='/auth/login' />
           </Switch>
+        </div>
+        <div className='pt-5'>
+          <Link to='/home'><h2 className='text-success fw-bold'>Regresar a la página principal</h2></Link>
         </div>
         {/* end::Wrapper */}
       </div>

@@ -10,6 +10,11 @@
     <link rel="stylesheet" id="layout-styles-anchor" href="%PUBLIC_URL%/splash-screen.css" />
     <title>Agrobime</title>
     <link rel="shortcut icon" href="%PUBLIC_URL%/media/logos/agrobime.ico" />
+
+    <!--begin::Global Stylesheets Bundle(used by all pages)-->
+		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<!--end::Global Stylesheets Bundle-->
   </head>
   <!-- TIP: add dark-mode class to enable dark mode -->
   <body id="kt_body" class="page-loading dark-mode">
@@ -20,5 +25,20 @@
       <span>Loading ...</span>
     </div>
     <div id="root-modals"></div>
+    <script>var hostUrl = "assets/";</script>
+		<!--begin::Javascript-->
+		<!--begin::Global Javascript Bundle(used by all pages)-->
+		<script src="assets/plugins/global/plugins.bundle.js"></script>
+		<script src="assets/js/scripts.bundle.js"></script>
+		<!--end::Global Javascript Bundle-->
+		<!--begin::Page Vendors Javascript(used by this page)-->
+		<script src="assets/plugins/custom/fslightbox/fslightbox.bundle.js"></script>
+		<script src="assets/plugins/custom/typedjs/typedjs.bundle.js"></script>
+		<!--end::Page Vendors Javascript-->
+		<!--begin::Page Custom Javascript(used by this page)-->
+		<script src="assets/js/custom/landing.js"></script>
+		<script src="assets/js/custom/pages/company/pricing.js"></script>
+		<!--end::Page Custom Javascript-->
+		<!--end::Javascript-->
   </body>
 </html>

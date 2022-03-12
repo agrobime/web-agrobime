@@ -14,21 +14,22 @@ import {Logout, AuthPage} from '../modules/auth'
 import {ErrorsPage} from '../modules/errors/ErrorsPage'
 import {RootState} from '../../setup'
 import {MasterInit} from '../../_metronic/layout/MasterInit'
+import { Home } from '../pages/home/Home'
 
 const Routes: FC = () => {
     const isAuthorized = useSelector<RootState>(({auth}) => auth.user, shallowEqual)
-    console.log(isAuthorized);
     return (
         <>
             <Switch>
+                <Route path='/home' component={Home}/>
                 {!isAuthorized ? (
                     /*Render auth page when user at `/auth` and not authorized.*/
                     <Route>
-                        <AuthPage />
+                        <AuthPage/>
                     </Route>
                 ) : (
                     /*Otherwise redirect to root page (`/`)*/
-                    <Redirect from='/auth' to='/' />
+                    <Redirect from='/auth' to='/lurin/dashboard' />
                 )}
 
                 <Route path='/error' component={ErrorsPage} />

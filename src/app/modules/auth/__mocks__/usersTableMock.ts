@@ -63,7 +63,7 @@ export class UsersTableMock {
     {
       id: 2,
       username: 'biohuertolurin',
-      password: 'userAgroBime123',
+      password: '1234',
       email: 'biohuertolurin@agrobime.com',
       auth: {
         accessToken: 'access-token-6829bba69dd3421d8762-991e9e806dbf',

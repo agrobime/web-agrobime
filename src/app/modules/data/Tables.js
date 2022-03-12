@@ -245,5 +245,6 @@ const TableX = () => {
         </>
     );
 }
+export {TablesFB}
 
 export default TableX
