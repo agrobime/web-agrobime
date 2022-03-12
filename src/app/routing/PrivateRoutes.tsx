@@ -22,7 +22,7 @@ export function PrivateRoutes() {
         <Route path='/biolurin/estadisticas' component={Estadistica} />
         <Route path='/biolurin/nosotros' component={Nosotros} />
         <Redirect from='/auth' to='/biolurin/dashboard' />
-        <Redirect exact from='*' to='/home' />
+        <Redirect exact from='*' to='/biolurin/dashboard' />
         <Redirect to='error/404' />
       </Switch>
     </Suspense>

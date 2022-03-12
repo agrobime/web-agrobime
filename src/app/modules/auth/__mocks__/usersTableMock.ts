@@ -6,7 +6,7 @@ export class UsersTableMock {
     {
       id: 1,
       username: 'admin',
-      password: 'AgroBime22',
+      password: '12345',
       email: 'admin@agrobime.com',
       auth: {
         accessToken: 'access-token-8f3ae836da744329a6f93bf20594b5cc',
@@ -64,7 +64,7 @@ export class UsersTableMock {
       id: 2,
       username: 'biohuertolurin',
       password: '1234',
-      email: 'biohuertolurin@agrobime.com',
+      email: 'biolurin@agrobime.com',
       auth: {
         accessToken: 'access-token-6829bba69dd3421d8762-991e9e806dbf',
         refreshToken: 'access-token-f8e4c61a318e4d618b6c199ef96b9e55',

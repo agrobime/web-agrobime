@@ -21,8 +21,8 @@ const loginSchema = Yup.object().shape({
 })
 
 const initialValues = {
-  email: 'admin@agrobime.com',
-  password: 'demo',
+  email: '',
+  password: '',
 }
 
 export function Login() {

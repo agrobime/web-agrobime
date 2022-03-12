@@ -9,7 +9,7 @@ export function HeaderWrapper() {
 
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" bg="none" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="none" variant="dark" className='bg-dark'>
         <Container>
           <Navbar.Brand>
             <Link to='/home'>
