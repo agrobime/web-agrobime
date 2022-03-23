@@ -25,6 +25,7 @@ const DashboardPage: FC = () => (
           chartHeight='200px'
         />
       </div>
+
     </div>
     {/* end::Row */}
 

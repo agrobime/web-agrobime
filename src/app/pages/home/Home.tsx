@@ -1,4 +1,10 @@
 import { Link } from "react-router-dom"
+import work1 from '../../modules/files/work1.jpeg'
+import work2 from '../../modules/files/work2.jpeg'
+import work3 from '../../modules/files/work3.jpeg'
+import work4 from '../../modules/files/work4.jpeg'
+import work5 from '../../modules/files/work5.jpeg'
+import work6 from '../../modules/files/work6.jpeg'
 
 const Home = () => {
     return (
@@ -47,14 +53,7 @@ const Home = () => {
                                                 {/* <!--begin::Menu item--> */}
                                                 <div className="menu-item">
                                                     {/* <!--begin::Menu link--> */}
-                                                    <Link className="menu-link nav-link active py-3 px-4 px-xxl-6" to="/home" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Inicio</Link>
-                                                    {/* <!--end::Menu link--> */}
-                                                </div>
-                                                {/* <!--end::Menu item--> */}
-                                                {/* <!--begin::Menu item--> */}
-                                                <div className="menu-item">
-                                                    {/* <!--begin::Menu link--> */}
-                                                    <Link className="menu-link nav-link py-3 px-4 px-xxl-6" to="/auth/page" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Iniciar sesión</Link>
+                                                    <Link className="menu-link nav-link active py-3 px-4 px-xxl-6" to="/home" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Agrobime</Link>
                                                     {/* <!--end::Menu link--> */}
                                                 </div>
                                                 {/* <!--end::Menu item--> */}
@@ -76,31 +75,16 @@ const Home = () => {
                         {/* <!--end::Header--> */}
 
                         {/* <!--begin::Landing hero--> */}
-                        <div className="d-flex flex-column flex-center w-100 min-h-250px min-h-lg-500px px-9">
+                        <div className="d-flex flex-column flex-center w-100">
                             {/* <!--begin::Heading--> */}
-                            <div className="text-center mb-5 mb-lg-10 py-5 py-lg-20">
+                            <div className="text-center p-8">
                                 {/* <!--begin::Title--> */}
-                                <h1 className="text-white lh-base fw-bolder fs-2x fs-lg-3x mb-5">
+                                <h1 className="text-white lh-base fw-bolder fs-2x fs-lg-3x">
                                     Soluciones tecnológicas integrales para la agricultura y biohuertos
                                 </h1>
                                 {/* <!--end::Title--> */}
                             </div>
                             {/* <!--end::Heading--> */}
-
-                            {/* <!--begin::Clients--> */}
-                            <div className="d-flex flex-center flex-wrap position-relative px-5">
-                                {/* <!--begin::Client--> */}
-                                <div className="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Fujifilm">
-                                    <img src="assets/media/logos/uni.png" className="mh-50px mh-lg-40px" alt="" />
-                                </div>
-                                {/* <!--end::Client--> */}
-                                {/* <!--begin::Client--> */}
-                                <div className="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Truman">
-                                    <img src="assets/media/logos/startupuni.jpg" className="mh-50px mh-lg-40px" alt="" />
-                                </div>
-                                {/* <!--end::Client--> */}
-                            </div>
-                            {/* <!--end::Clients--> */}
                         </div>
                         {/* <!--end::Landing hero--> */}
                     </div>
@@ -109,81 +93,120 @@ const Home = () => {
                 </div>
                 {/* <!--end::Header Section--> */}
 
-                {/* <!--begin::How It Works Section--> */}
-                <div className="mb-n10 mb-lg-n20 z-index-2 mt-10">
+                {/* <!--begin::Proyectos--> */}
+                <div className="z-index-2 my-10">
                     {/* <!--begin::Container--> */}
                     <div className="container">
                         {/* <!--begin::Heading--> */}
-                        <div className="text-center mb-17">
+                        <div className="text-center mb-10">
                             {/* <!--begin::Title--> */}
-                            <h3 className="fs-2hx text-dark mb-5" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">Nuestros trabajos</h3>
+                            <h3 className="fs-2hx text-dark mb-5" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">Bio Huerto Lurin</h3>
                             {/* <!--end::Title--> */}
                             {/* <!--begin::Text--> */}
                             <div className="fs-5 text-muted fw-bold">
-                                Te presentamos los proyectos en los que hemos participado
+                                Un proyecto en el que participamos
                             </div>
                             {/* <!--end::Text--> */}
                         </div>
                         {/* <!--end::Heading--> */}
                         {/* <!--begin::Product slider--> */}
-                        <div className="tns tns-default">
-                            {/* <!--begin::Slider--> */}
-                            <div data-tns="true" data-tns-loop="true" data-tns-swipe-angle="false" data-tns-speed="2000" data-tns-autoplay="true" data-tns-autoplay-timeout="18000" data-tns-controls="true" data-tns-nav="false" data-tns-items="1" data-tns-center="false" data-tns-dots="false" data-tns-prev-button="#kt_team_slider_prev1" data-tns-next-button="#kt_team_slider_next1">
-                                {/* <!--begin::Item--> */}
-                                <div className="text-center px-5 pt-5 pt-lg-10 px-lg-10">
-                                    <img src="assets/media/lurin/proyecto.jpeg" className="card-rounded shadow mw-100" alt="" />
+                        <div className="row">
+                            <div className="col-12 col-md-4 p-2">
+                                <div className="card border border-primary">
+                                    <img src={work1} alt="..."/>
+                                    <div className="card-body">
+                                        Contenido del card
+                                    </div>
                                 </div>
-                                {/* <!--end::Item--> */}
-                                {/* <!--begin::Item--> */}
-                                <div className="text-center px-5 pt-5 pt-lg-10 px-lg-10">
-                                    <img src="assets/media/lurin/1.jpeg" className="card-rounded shadow mw-100" alt="" />
-                                </div>
-                                {/* <!--end::Item--> */}
-                                {/* <!--begin::Item--> */}
-                                <div className="text-center px-5 pt-5 pt-lg-10 px-lg-10">
-                                    <img src="assets/media/lurin/2.jpeg" className="card-rounded shadow mw-100" alt="" />
-                                </div>
-                                {/* <!--end::Item--> */}
-                                {/* <!--begin::Item--> */}
-                                <div className="text-center px-5 pt-5 pt-lg-10 px-lg-10">
-                                    <img src="assets/media/lurin/3.jpeg" className="card-rounded shadow mw-100" alt="" />
-                                </div>
-                                {/* <!--end::Item--> */}
                             </div>
-                            {/* <!--end::Slider--> */}
-                            {/* <!--begin::Slider button--> */}
-                            <button className="btn btn-icon btn-active-color-primary" id="kt_team_slider_prev1">
-                                {/* <!--begin::Svg Icon | path: icons/duotune/arrows/arr074.svg--> */}
-                                <span className="svg-icon svg-icon-3x">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                        <path d="M11.2657 11.4343L15.45 7.25C15.8642 6.83579 15.8642 6.16421 15.45 5.75C15.0358 5.33579 14.3642 5.33579 13.95 5.75L8.40712 11.2929C8.01659 11.6834 8.01659 12.3166 8.40712 12.7071L13.95 18.25C14.3642 18.6642 15.0358 18.6642 15.45 18.25C15.8642 17.8358 15.8642 17.1642 15.45 16.75L11.2657 12.5657C10.9533 12.2533 10.9533 11.7467 11.2657 11.4343Z" fill="black" />
-                                    </svg>
-                                </span>
-                                {/* <!--end::Svg Icon--> */}
-                            </button>
-                            {/* <!--end::Slider button--> */}
-                            {/* <!--begin::Slider button--> */}
-                            <button className="btn btn-icon btn-active-color-primary" id="kt_team_slider_next1">
-                                {/* <!--begin::Svg Icon | path: icons/duotune/arrows/arr071.svg--> */}
-                                <span className="svg-icon svg-icon-3x">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                        <path d="M12.6343 12.5657L8.45001 16.75C8.0358 17.1642 8.0358 17.8358 8.45001 18.25C8.86423 18.6642 9.5358 18.6642 9.95001 18.25L15.4929 12.7071C15.8834 12.3166 15.8834 11.6834 15.4929 11.2929L9.95001 5.75C9.5358 5.33579 8.86423 5.33579 8.45001 5.75C8.0358 6.16421 8.0358 6.83579 8.45001 7.25L12.6343 11.4343C12.9467 11.7467 12.9467 12.2533 12.6343 12.5657Z" fill="black" />
-                                    </svg>
-                                </span>
-                                {/* <!--end::Svg Icon--> */}
-                            </button>
-                            {/* <!--end::Slider button--> */}
+                            <div className="col-12 col-md-4 p-2">
+                                <div className="card border border-primary">
+                                <img src={work2} alt="..."/>
+                                    <div className="card-body">
+                                        Contenido del card
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-12 col-md-4 p-2">
+                                <div className="card border border-primary">
+                                <img src={work3} alt="..."/>
+                                    <div className="card-body">
+                                        Contenido del card
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-12 col-md-4 p-2">
+                                <div className="card border border-primary">
+                                <img src={work4} alt="..."/>
+                                    <div className="card-body">
+                                        Contenido del card
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-12 col-md-4 p-2">
+                                <div className="card border border-primary">
+                                <img src={work5} alt="..."/>
+                                    <div className="card-body">
+                                        Contenido del card
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-12 col-md-4 p-2">
+                                <div className="card border border-primary">
+                                <img src={work6} alt="..."/>
+                                    <div className="card-body">
+                                        Contenido del card
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         {/* <!--end::Product slider--> */}
                     </div>
                     {/* <!--end::Container--> */}
                 </div>
-                {/* <!--end::How It Works Section--> */}
+                {/* <!--end::Proyectos--> */}
+
+                <hr className="my-5"/>
+
+                {/* <!--begin::Partipaciones--> */}
+                <div className="z-index-2 my-10">
+                    {/* <!--begin::Container--> */}
+                    <div className="container">
+                        {/* <!--begin::Heading--> */}
+                        <div className="text-center mb-10">
+                            {/* <!--begin::Title--> */}
+                            <h3 className="fs-2hx text-dark mb-5" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">Participaciones</h3>
+                            {/* <!--end::Title--> */}
+                            {/* <!--begin::Text--> */}
+                            <div className="fs-5 text-muted fw-bold">
+                                Concursos en las que hemos participado para impulsar nuestra empresa
+                            </div>
+                            {/* <!--end::Text--> */}
+                        </div>
+                        {/* <!--end::Heading--> */}
+                            {/* <!--begin::Clients--> */}
+                            <div className="d-flex flex-center flex-wrap position-relative">
+                                {/* <!--begin::Client--> */}
+                                <div className="m-3 m-md-6" data-bs-toggle="tooltip" title="uni">
+                                    <img src="assets/media/logos/uni.png" className="mh-50px" alt="uni" />
+                                </div>
+                                {/* <!--end::Client--> */}
+                                {/* <!--begin::Client--> */}
+                                <div className="m-3 m-md-6" data-bs-toggle="tooltip" title="startupuni">
+                                    <img src="assets/media/logos/startupuni.jpg" className="mh-50px" alt="startupuni" />
+                                </div>
+                                {/* <!--end::Client--> */}
+                            </div>
+                            {/* <!--end::Clients--> */}
+                    </div>
+                    {/* <!--end::Container--> */}
+                </div>
+                {/* <!--end::Partipaciones--> */}
 
                 {/* <!--begin::Footer Section--> */}
                 <div className="mb-0">
                     {/* <!--begin::Wrapper--> */}
-                    <div className="landing-dark-bg pt-20">
+                    <div className="landing-dark-bg">
                         {/* <!--begin::Separator--> */}
                         <div className="landing-dark-separator"></div>
                         {/* <!--end::Separator--> */}

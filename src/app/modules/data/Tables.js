@@ -171,7 +171,7 @@ const TableX = () => {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        firebaseDb.child('t').on('value', snapshot => {
+        firebaseDb.child('D').on('value', snapshot => {
             if (snapshot.val() != null) {
                 setDataFb({
                     ...snapshot.val()
@@ -187,6 +187,7 @@ const TableX = () => {
         for (let i in dataFb) {
             const p1 = dataFb[i]['humS'].split('U')
             const p2 = dataFb[i]['trama'].split('U')
+            if(p1[0] !== '0') console.log(p1[0])
             data.push({
                 humendadS: p1[0],
                 ppm: p1[1],
