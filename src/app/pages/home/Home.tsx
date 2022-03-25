@@ -93,6 +93,38 @@ const Home = () => {
                 </div>
                 {/* <!--end::Header Section--> */}
 
+                <hr className="my-5"/>
+
+                {/* <!--begin::comparte QR--> */}
+                <div className="z-index-2 my-10">
+                    {/* <!--begin::Container--> */}
+                    <div className="container">
+                        {/* <!--begin::Heading--> */}
+                        <div className="text-center mb-10">
+                            {/* <!--begin::Title--> */}
+                            <h3 className="fs-2hx text-dark mb-5" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">Comparte</h3>
+                            {/* <!--end::Title--> */}
+                            {/* <!--begin::Text--> */}
+                            <div className="fs-5 text-muted fw-bold">
+                                Comparte este código QR para que más personas conozcan del biohuerto
+                            </div>
+                            {/* <!--end::Text--> */}
+                        </div>
+                        {/* <!--end::Heading--> */}
+                            {/* <!--begin::Clients--> */}
+                            <div className="d-flex flex-center flex-wrap position-relative">
+                                {/* <!--begin::Client--> */}
+                                <div className="m-3 m-md-6" data-bs-toggle="tooltip" title="uni">
+                                    <img src="assets/media/lurin/qr.png" alt="uni" />
+                                </div>
+                                {/* <!--end::Client--> */}
+                            </div>
+                            {/* <!--end::Clients--> */}
+                    </div>
+                    {/* <!--end::Container--> */}
+                </div>
+                {/* <!--end::comparte QR--> */}
+
                 {/* <!--begin::Proyectos--> */}
                 <div className="z-index-2 my-10">
                     {/* <!--begin::Container--> */}
@@ -114,48 +146,48 @@ const Home = () => {
                             <div className="col-12 col-md-4 p-2">
                                 <div className="card border border-primary">
                                     <img src={work1} alt="..."/>
-                                    <div className="card-body">
-                                        Contenido del card
+                                    <div className="card-body text-center">
+                                        Actividades y proyectos en el proyecto Bio Huerto en Casa
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-md-4 p-2">
                                 <div className="card border border-primary">
                                 <img src={work2} alt="..."/>
-                                    <div className="card-body">
-                                        Contenido del card
+                                    <div className="card-body text-center">
+                                        Actividades y proyectos en el proyecto Bio Huerto en Casa
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-md-4 p-2">
                                 <div className="card border border-primary">
                                 <img src={work3} alt="..."/>
-                                    <div className="card-body">
-                                        Contenido del card
+                                    <div className="card-body text-center">
+                                        Actividades y proyectos en el proyecto Bio Huerto en Casa
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-md-4 p-2">
                                 <div className="card border border-primary">
                                 <img src={work4} alt="..."/>
-                                    <div className="card-body">
-                                        Contenido del card
+                                    <div className="card-body text-center">
+                                        Actividades y proyectos en el proyecto Bio Huerto en Casa
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-md-4 p-2">
                                 <div className="card border border-primary">
                                 <img src={work5} alt="..."/>
-                                    <div className="card-body">
-                                        Contenido del card
+                                    <div className="card-body text-center">
+                                        Actividades y proyectos en el proyecto Bio Huerto en Casa
                                     </div>
                                 </div>
                             </div>
                             <div className="col-12 col-md-4 p-2">
                                 <div className="card border border-primary">
                                 <img src={work6} alt="..."/>
-                                    <div className="card-body">
-                                        Contenido del card
+                                    <div className="card-body text-center">
+                                        Actividades y proyectos en el proyecto Bio Huerto en Casa
                                     </div>
                                 </div>
                             </div>
@@ -188,12 +220,12 @@ const Home = () => {
                             <div className="d-flex flex-center flex-wrap position-relative">
                                 {/* <!--begin::Client--> */}
                                 <div className="m-3 m-md-6" data-bs-toggle="tooltip" title="uni">
-                                    <img src="assets/media/logos/uni.png" className="mh-50px" alt="uni" />
+                                    <img src="assets/media/logos/uni.png" className="mh-100px" alt="uni" />
                                 </div>
                                 {/* <!--end::Client--> */}
                                 {/* <!--begin::Client--> */}
                                 <div className="m-3 m-md-6" data-bs-toggle="tooltip" title="startupuni">
-                                    <img src="assets/media/logos/startupuni.jpg" className="mh-50px" alt="startupuni" />
+                                    <img src="assets/media/logos/startupuni.jpg" className="mh-100px" alt="startupuni" />
                                 </div>
                                 {/* <!--end::Client--> */}
                             </div>
