@@ -5,35 +5,36 @@ import work3 from '../../../modules/files/work3.jpeg'
 import work4 from '../../../modules/files/work4.jpeg'
 import work5 from '../../../modules/files/work5.jpeg'
 import work6 from '../../../modules/files/work6.jpeg'
+import work7 from '../../../modules/files/work7.jpeg'
 
 function CarouselPj() {
  const data = [
     {
-      image: "http://drive.google.com/uc?export=view&id=18_rs__y3ERs3xUO9ZIcMOmCGh34NB2US",
+      image: work1,
       caption: "Talleres presenciales"
     },
     {
-      image: "http://drive.google.com/uc?export=view&id=1Omo36hgZ5uHy82Ucj9neNjrqb1Ed2GCz",
+      image: work2,
       caption: "Talleres presenciales"
     },
     {
-      image: "http://drive.google.com/uc?export=view&id=1bwkcVo6tacQl7xQ0DQszEbaotjtB5uCa",
+      image: work3,
       caption: "Camillas de cultivo"
     },
     {
-      image: "http://drive.google.com/uc?export=view&id=1xIDPKqXmOXoGdYj7_1VJIfKG8OOa0UcC",
+      image: work4,
       caption: "Planos"
     },
     {
-      image: "http://drive.google.com/uc?export=view&id=1DJnBvQukXbWRyyGv4a586E5aFabv2BCC",
+      image: work5,
       caption: "Planos"
     },
     {
-      image: "http://drive.google.com/uc?export=view&id=1YKCyjCnTmHI0kuqE93-MreXZt6E6_cmf",
+      image: work6,
       caption: "Planos"
     },
     {
-      image: "http://drive.google.com/uc?export=view&id=1qfKOBhofhUVTrT0e2oUE6L2hTkKM7URS",
+      image: work7,
       caption: "Planos"
     },
   ];
