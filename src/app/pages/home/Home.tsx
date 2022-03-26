@@ -1,10 +1,6 @@
 import { Link } from "react-router-dom"
-import work1 from '../../modules/files/work1.jpeg'
-import work2 from '../../modules/files/work2.jpeg'
-import work3 from '../../modules/files/work3.jpeg'
-import work4 from '../../modules/files/work4.jpeg'
-import work5 from '../../modules/files/work5.jpeg'
-import work6 from '../../modules/files/work6.jpeg'
+
+import CarouselPj from "./components/Carousel.js"
 
 const Home = () => {
     return (
@@ -132,7 +128,7 @@ const Home = () => {
                         {/* <!--begin::Heading--> */}
                         <div className="text-center mb-10">
                             {/* <!--begin::Title--> */}
-                            <h3 className="fs-2hx text-dark mb-5" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">Bio Huerto Lurin</h3>
+                            <h3 className="fs-2hx text-dark mb-5" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">Biohuerto Lurin</h3>
                             {/* <!--end::Title--> */}
                             {/* <!--begin::Text--> */}
                             <div className="fs-5 text-muted fw-bold">
@@ -142,56 +138,7 @@ const Home = () => {
                         </div>
                         {/* <!--end::Heading--> */}
                         {/* <!--begin::Product slider--> */}
-                        <div className="row">
-                            <div className="col-12 col-md-4 p-2">
-                                <div className="card border border-primary">
-                                    <img src={work1} alt="..."/>
-                                    <div className="card-body text-center">
-                                        Actividades y proyectos en el proyecto Bio Huerto en Casa
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-12 col-md-4 p-2">
-                                <div className="card border border-primary">
-                                <img src={work2} alt="..."/>
-                                    <div className="card-body text-center">
-                                        Actividades y proyectos en el proyecto Bio Huerto en Casa
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-12 col-md-4 p-2">
-                                <div className="card border border-primary">
-                                <img src={work3} alt="..."/>
-                                    <div className="card-body text-center">
-                                        Actividades y proyectos en el proyecto Bio Huerto en Casa
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-12 col-md-4 p-2">
-                                <div className="card border border-primary">
-                                <img src={work4} alt="..."/>
-                                    <div className="card-body text-center">
-                                        Actividades y proyectos en el proyecto Bio Huerto en Casa
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-12 col-md-4 p-2">
-                                <div className="card border border-primary">
-                                <img src={work5} alt="..."/>
-                                    <div className="card-body text-center">
-                                        Actividades y proyectos en el proyecto Bio Huerto en Casa
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-12 col-md-4 p-2">
-                                <div className="card border border-primary">
-                                <img src={work6} alt="..."/>
-                                    <div className="card-body text-center">
-                                        Actividades y proyectos en el proyecto Bio Huerto en Casa
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <CarouselPj/>
                         {/* <!--end::Product slider--> */}
                     </div>
                     {/* <!--end::Container--> */}

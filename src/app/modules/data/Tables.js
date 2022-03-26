@@ -163,6 +163,8 @@ const TablesFB = () => {
     );
 }
 
+// const dataDelete = {}
+
 const TableX = () => {
 
     var [dataFb, setDataFb] = useState({})
@@ -179,15 +181,27 @@ const TableX = () => {
             } else { setDataFb({}) }
         })
 
-    }, []) //si no hay nada escuchando se pone []
+    }, [])
+
+    // const deleteAllData = () => {
+    //     for (let i in dataDelete) {
+    //         console.log(i)
+    //         firebaseDb.child(`D/${i}`).remove(
+    //             err => {
+    //                 if (err)
+    //                     console.log(err)
+    //                 else
+    //                     setCurrentId('')
+    //             }
+    //         )
+    //     }
+    // }
 
     const showData = () => {
-        // console.log("Llenar data");
         let data = []
         for (let i in dataFb) {
             const p1 = dataFb[i]['humS'].split('U')
             const p2 = dataFb[i]['trama'].split('U')
-            if(p1[0] !== '0') console.log(p1[0])
             data.push({
                 humendadS: p1[0],
                 ppm: p1[1],
@@ -196,7 +210,6 @@ const TableX = () => {
                 humedad: p2[1],
                 valvula: p2[2],
             })
-            // onDelete(i)
         }
         setData(data)
     }
@@ -233,6 +246,7 @@ const TableX = () => {
             <div className="row p-5">
                 <div className="text-center">
                     <button className="btn btn-success mx-5" onClick={() => showData()}> Mostrar datos </button>
+                    {/* <button className="btn btn-danger mx-5" onClick={() => deleteAllData()}> Eliminar todo </button> */}
                 </div>
                 <div className="col-md-12">
                     <h3 className="text-center py-5">Mediciones</h3>
@@ -246,6 +260,6 @@ const TableX = () => {
         </>
     );
 }
-export {TablesFB}
+export { TablesFB }
 
 export default TableX
