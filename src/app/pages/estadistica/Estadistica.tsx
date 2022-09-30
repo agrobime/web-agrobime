@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import TablesX from '../../modules/data/Tables'
+import Graficos from './componentes/Charjs'
 
 const Estadistica: FC = () => (
     <>
@@ -8,6 +9,7 @@ const Estadistica: FC = () => (
                 <div className="card card-xxl-stretch mb-5 mb-xl-8">
                     <div className="card-body py-3">
                         <TablesX />
+                        {/* <Graficos/> */}
                     </div>
                 </div>
             </div>

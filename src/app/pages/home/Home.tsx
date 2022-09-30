@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 import CarouselPj from "./components/Carousel.js"
+import CarouselBootstrap from "./components/CarouselBootstrap.js"
 
 const Home = () => {
     return (
@@ -109,7 +110,8 @@ const Home = () => {
                         </div>
                         {/* <!--end::Heading--> */}
                         {/* <!--begin::Product slider--> */}
-                        <CarouselPj />
+                        {/* <CarouselPj /> */}
+                        <CarouselBootstrap />
                         {/* <!--end::Product slider--> */}
                     </div>
                     {/* <!--end::Container--> */}

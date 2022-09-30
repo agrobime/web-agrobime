@@ -7,7 +7,7 @@ import work5 from '../../../modules/files/work5.jpeg'
 import work6 from '../../../modules/files/work6.jpeg'
 import work7 from '../../../modules/files/work7.jpeg'
 
-function CarouselPj() {
+const CarouselPj = () => {
  const data = [
     {
       image: work1,
