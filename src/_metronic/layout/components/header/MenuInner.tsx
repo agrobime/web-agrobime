@@ -12,7 +12,7 @@ export function MenuInner() {
   return (
     <>
       <MenuItem title='Nosotros' to='/biolurin/nosotros' />
-      <MenuItem title='Monitoreo' to='/biolurin/estadisticas' />
+      <MenuItem title='Monitoreo' to='/biolurin/monitoreo' />
       <MenuItem title='Dashboard' to='/biolurin/dashboard' />
     </>
   )

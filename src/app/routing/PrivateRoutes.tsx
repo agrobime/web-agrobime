@@ -2,7 +2,7 @@ import React, { Suspense } from 'react'
 import { Redirect, Route, Switch } from 'react-router-dom'
 import { FallbackView } from '../../_metronic/partials'
 import { DashboardWrapper } from '../pages/dashboard/DashboardWrapper'
-import { Estadistica } from '../pages/estadistica/Estadistica'
+import { Monitoreo } from '../pages/estadistica/Monitoreo'
 import { Nosotros } from '../pages/nosotros/Nosotros'
 import { Admin } from '../pages/admin/Admin'
 
@@ -19,7 +19,7 @@ export function PrivateRoutes() {
       <Switch>
         <Route path='/biolurin/admin' component={Admin} />
         <Route path='/biolurin/dashboard' component={DashboardWrapper} />
-        <Route path='/biolurin/estadisticas' component={Estadistica} />
+        <Route path='/biolurin/monitoreo' component={Monitoreo} />
         <Route path='/biolurin/nosotros' component={Nosotros} />
         <Redirect from='/auth' to='/biolurin/dashboard' />
         <Redirect exact from='*' to='/biolurin/dashboard' />

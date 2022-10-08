@@ -1,12 +1,7 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { Component } from 'react'
+import { FC } from 'react'
 
-export default class Nosotros extends Component {
-
-  render() {
-    return (
-
-      <>
+const Nosotros: FC = () => (
+      <div className='container'>
         <div className='card card-xxl-stretch mb-xl-8 text-center my-5'>
           {/* begin::Body */}
           <div className='card-body py-8'>
@@ -27,13 +22,7 @@ export default class Nosotros extends Component {
           {/* begin::Body */}
         </div>
 
-      </>
-
-
-
-
-    )
-  }
-}
+      </div>
+)
 
 export { Nosotros }

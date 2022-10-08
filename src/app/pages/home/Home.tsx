@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 
-import CarouselPj from "./components/Carousel.js"
 import CarouselBootstrap from "./components/CarouselBootstrap.js"
 
 const Home = () => {
